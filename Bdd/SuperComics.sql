@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Mer 19 Novembre 2014 à 16:48
+-- Généré le: Mer 19 Novembre 2014 à 16:50
 -- Version du serveur: 5.5.40-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.5
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `card` (
   `text` varchar(525) NOT NULL,
   `color` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
 -- Contenu de la table `card`
@@ -52,7 +52,21 @@ INSERT INTO `card` (`id`, `name`, `text`, `color`) VALUES
 (11, 'saut prodigieux', 'chaque concurrent saute à pieds joints. Celui qui franchit la plus \nGrande distance remporte ce duel. \nAttention aux risques de chute !', 'green'),
 (12, 'super poumons', 'chaque concurrent se pince le nez. Celui qui retient son souffle le plus\nLongtemps remporte ce duel', 'green'),
 (13, 'pouvoir de métamorphose 4', 'le concurrent qui imite le mieux le cheval remporte ce duel. \n Les autres joueurs jugent', 'green'),
-(14, 'force brute', 'les concurrents se livrent à un bras de fer. \nCelui qui gagne remporte ce duel', 'green');
+(14, 'force brute', 'les concurrents se livrent à un bras de fer. \nCelui qui gagne remporte ce duel', 'green'),
+(15, 'super sauvetage', 'le premier concurrent qui serre dans ses bras la plus grande personne présente (autre qu''un concurrent) remporte ce duel.', 'orange'),
+(16, 'super endurance a la douleur', 'le premier concurrent qui s''arrche un cheveux remporte ce duel.', 'orange'),
+(17, 'super rédaction', 'le premier concurrent a écrire toutes les lettres de l''alphabet selon l''ordre inverse (en commencant par z), sans utiliser d''aide mémoire, remporte ce duel.', 'orange'),
+(18, 'super gadget', 'lisez cette phrase clairement et rapidement aux concurrents : « le premier concurrent qui insère une carte dans son pantalon (ou sa jupe!) et la fait ressortir par le bas remporte ce duel. »', 'orange'),
+(19, 'super connaissances', 'le premier concurrent qui rédige une liste de trois filmsayant remporté l''oscar, le césar ou le jutra du meilleur film remporte ce duel', 'orange'),
+(20, 'super sauvetage', 'le premier concurrent qui serre dans ses bras la plus petite personne présente (autre qu''un concurrent) remporte ce duel.', 'orange'),
+(21, 'super fessier ', 'lisez cette phrase clairement et rapidement aux concurrents : «  le premier concurrent qui fait un tour assis par terre sur ses fesses remporte ce duel. »', 'orange'),
+(22, 'super dactylo', 'le premier concurrent a rédiger lisiblement 6 fois la phrase suivante remporte ce duel. « je suis le plus rapide de tous ! ».', 'orange'),
+(23, 'super connaissances', 'lisez cette phrase clairement et rapidement aux concurrents : «  le premier concurrent qui trouve un mot contenant la premiere lettre du prénom des deux concurrents remporte ce duel ».', 'orange'),
+(24, 'super sauvetage', 'le premier concurrent qui souleve un autre joueur dans ses bras remporte ce duel.', 'orange'),
+(25, 'super connaissances', 'le premier concurrent qui rédige une liste de 4 jeux de société remporte ce duel.', 'orange'),
+(26, 'changement de costume', 'le premier concurrent qui retire ses chaussettes remporte ce duel.', ''),
+(27, 'pouvoir supra rotator', 'lisez cette phrase clairement et rapidement aux concurrents : « chaque concurrent pose sa main droite sur le sol et en fait le tour, puis fait de meme avec sa main gauche. Le premier revenu debout remporte ce duel. »', ''),
+(28, 'connaissances astrales', 'lisez cette phrase clairement et rapidement aux concurrents : « de quel signe du zodiaque seriez-vous si vous naissiez aujourd''hui ? ». le premier qui a la bonne réponse remporte ce duel.', '');
 
 -- --------------------------------------------------------
 
