@@ -1,25 +1,27 @@
 <?php include("view/header.php");?>
-<body>
-    <title> </title>
+<body class="index">
+    <h1>SuperComics L'application </h1>
+    </br>
     <table>
         <tr> 
-            <td> <img src="img/supcom.jpg" heigh="300px"> </td>
-            <td> Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : </br>
-                vitesse, adresse, connaissances, ingéniosité, mémoire... </br>
-                Tous vos talents seront mis à l’épreuve. SUPER COMICS vous propose trois modes de jeux. </br>
-                Avec «Héros solitaires», chacun joue à son tour. </br>
+            <td> <img src="img/supcom.jpg" class="supcom"> </td>
+            <td class="text"> Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
+                vitesse, adresse, connaissances, ingéniosité, mémoire... <br>
+                Tous vos talents seront mis à l’épreuve. SUPER COMICS vous propose trois modes de jeux. <br>
+                Avec «Héros solitaires», chacun joue à son tour. <br>
                 Pour les grands groupes, formez des équipes de justiciers ou, si vous ne redoutez rien, lancez-
-                vous dans le mode «Apocalypse», où tous les héros jouent EN MÊME TEMPS!!</br>
-                SUPER COMICS possède sans doute le jeu avec les règles les plus simples de la planète!</br>
-                1. Défiez un adversaire.</br>
-                2. Retournez une carte duel et jouez! Vous ne savez jamais ce qui vous attend!</br>
-                Quelques exemples?</br>
+                vous dans le mode «Apocalypse», où tous les héros jouent EN MÊME TEMPS!!<br>
+                SUPER COMICS possède sans doute le jeu avec les règles les plus simples de la planète!<br>
+                1. Défiez un adversaire.<br>
+                2. Retournez une carte duel et jouez! Vous ne savez jamais ce qui vous attend!<br>
+                Quelques exemples?<br>
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
             </td>
         </tr>
         <tr> 
-            <td collspan="2"> <input type="button" value="lancer le jeu"></td>
+
+            <td collspan="2"> <input type="submit" value="lancer le jeu"></td>
         </tr>
     </table>
 </body>
