@@ -20,14 +20,14 @@
             
         </article>
         
-        <aside>
+        <section class="tabCenter">
             <table class="text">
                 <tr>
                     <td>Joueur X </td>
                     <td>Pseudo X </td>
                 </tr>
             </table>
-        </aside>
+        </section class="tabCenter">
 
     </section>
    

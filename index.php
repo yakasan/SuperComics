@@ -31,7 +31,7 @@
 
      <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
 
-    <section class="tabWinner">
+    <section class="tabCenter">
         <table > 
             <tr>
                 <td> Pseudo joueurs gagnant</td>
