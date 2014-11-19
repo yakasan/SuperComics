@@ -8,10 +8,13 @@ input.launchGameButton{
 	display: block;
 	margin: auto;
 	margin-top: 200px;
+	margin-bottom: 50px;
 	width: 250px;
 	height: 50px;
 	font-size: 220%;
-
+}
+section.tabWinner table{
+	margin: 0 auto;
 }
 img.supcom{
 	float: left;
