@@ -1,5 +1,5 @@
-<?php include("view/header.html");?>
+<?php include("view/header.php");?>
 <body>
 Il faut tuer le papy chiotte!!!!
 </body>
-<?php include("view/footer.html");?>
+<?php include("view/footer.php");?>
