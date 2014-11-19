@@ -12,9 +12,9 @@
             <form method="get">
                 <fieldset>
                     <legend class="text"> De 3 à 8 joueurs </legend>
-                    <label for="pseudo"class="text"> Pseudo
+                    <label for="pseudo"class="text"> Pseudo </label>
                     <input type="text" id="pseudo" name="pseudo">
-                    <input type="submit" value="ajouter>">
+                    <input type="submit" value="ajouter">
                 </fieldset>
             </form>
             
