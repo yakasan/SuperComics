@@ -27,18 +27,14 @@
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
 
-<<<<<<< HEAD
-    </section>
-    <section>
-        <table> 
-=======
-    </section>   
 
+    </section>
+   
      <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
 
     <section class="tabCenter">
         <table > 
->>>>>>> 34bcb285d338e42f9015016012f5ca9a813df40c
+
             <tr>
                 <td> Pseudo joueurs gagnant</td>
                 <td> Date de la partie gagnée</td>
