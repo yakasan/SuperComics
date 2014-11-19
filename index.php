@@ -24,6 +24,20 @@
         <aside><img src="img/supcom.jpg" class="supcom"></aside>
 
     </section>
+    <section>
+        <table> 
+            <tr>
+                <td> Pseudo joueurs gagnant</td>
+                <td> Date de la partie gagnée</td>
+            </tr>
+            <?php
+            foreach ($playerWinner as $key => $value) {
+                echo "<tr><td>".$value;
+             } 
+            ?>
+            
+        </table>
+    </section>
     
 
      <a href="view/create.php"><input type="submit" value="lancer le jeu" ></a>
