@@ -1,11 +1,14 @@
 <?php include("view/header.php");?>
 <body class="index">
-    <h1>SuperComics L'application </h1>
-    </br>
-    <table>
-        <tr> 
-            <td> <img src="img/supcom.jpg" class="supcom"> </td>
-            <td class="text"> Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
+    <header> 
+        <h1>SuperComics L'application </h1>
+        </br>
+    </header>
+
+
+    <section>
+        
+        <article class="text">Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
                 vitesse, adresse, connaissances, ingéniosité, mémoire... <br>
                 Tous vos talents seront mis à l’épreuve. SUPER COMICS vous propose trois modes de jeux. <br>
                 Avec «Héros solitaires», chacun joue à son tour. <br>
@@ -17,12 +20,13 @@
                 Quelques exemples?<br>
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
-            </td>
-        </tr>
-        <tr> 
+        </article>
+        <aside><img src="img/supcom.jpg" class="supcom"></aside>
 
-            <td collspan="2"> <input type="submit" value="lancer le jeu"></td>
-        </tr>
-    </table>
+    </section>
+    
+
+     <a href="view/create.php"><input type="submit" value="lancer le jeu" ></a>
+        
 </body>
 <?php include("view/footer.php");?>
