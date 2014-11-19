@@ -19,7 +19,7 @@
             </td>
         </tr>
         <tr> 
-            <td collspan="2"> </td>
+            <td collspan="2"> <input type="button" value="lancer le jeu"</td>
         </tr>
     </table>
 </body>
