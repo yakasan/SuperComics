@@ -1,6 +1,10 @@
 <?php include("view/header.php");?>
+<<<<<<< HEAD
 <body class="index">
 
+=======
+<body>
+>>>>>>> d64b94a013d48200dca7e20f5089ecc836bdd5e3
     <header> 
         <h1>SuperComics L'application </h1>
         </br>
@@ -22,7 +26,27 @@
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
+<<<<<<< HEAD
+=======
+        <aside>
+            <img src="img/supcom.jpg" class="supcom">
+        </aside>
+>>>>>>> d64b94a013d48200dca7e20f5089ecc836bdd5e3
 
+    </section>
+    <section>
+        <table> 
+            <tr>
+                <td> Pseudo joueurs gagnant</td>
+                <td> Date de la partie gagnée</td>
+            </tr>
+            <?php
+            foreach ($playerWinner as $key => $value) {
+                echo "<tr><td>".$value;
+             } 
+            ?>
+            
+        </table>
     </section>
     
 
