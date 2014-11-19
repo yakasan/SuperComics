@@ -7,14 +7,24 @@ body.index{
 		margin-right: auto;
 
 }
+input.launchGameButton{
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	width: 250px;
+	height: 50px;
+	font-size: 220%;
 
+}
 img.supcom{
-	width: 200px;
-	height: auto;
+	float: left;
+	width: auto;
+	height: 50%;
 }
 article.text{
 	color:white;
  	font-family: arial;
+ 	text-align: center;
 }
 
 h1 {

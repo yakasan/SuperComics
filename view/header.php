@@ -9,4 +9,6 @@
 		  <script src="js/jquery-2.1.1.js"></script>
 		  <script src="js/jquery/jquery-ui.js"></script>
 		  <script src="js/bootstrap.js"></script>
+  		  <nav><img src="img/supcom.jpg" class="supcom"></nav>
+
 		</head>

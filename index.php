@@ -1,5 +1,6 @@
 <?php include("view/header.php");?>
 <body class="index">
+
     <header> 
         <h1>SuperComics L'application </h1>
         </br>
@@ -21,12 +22,11 @@
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
-        <aside><img src="img/supcom.jpg" class="supcom"></aside>
 
     </section>
     
 
-     <a href="view/create.php"><input type="submit" value="lancer le jeu" ></a>
+     <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
         
 </body>
 <?php include("view/footer.php");?>
