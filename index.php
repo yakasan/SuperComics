@@ -1,5 +1,10 @@
 <?php include("view/header.php");?>
+
 <body class="index">
+
+
+<body>
+
     <header> 
         <h1>SuperComics L'application </h1>
         </br>
