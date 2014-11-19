@@ -27,9 +27,6 @@
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
 
-        <aside>
-            <img src="img/supcom.jpg" class="supcom">
-        </aside>
 
     </section>
     <section>

@@ -18,8 +18,8 @@ section.tabCenter table{
 }
 img.supcom{
 	float: left;
-	width: auto;
-	height: 50%;
+	max-width: 50%;
+	height: auto;
 }
 .text{
 	color:white;
