@@ -1,5 +1,5 @@
 <?php include("view/header.php");?>
-<body class="index">
+<body>
     <header> 
         <h1>SuperComics L'application </h1>
         </br>
@@ -21,7 +21,9 @@
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
-        <aside><img src="img/supcom.jpg" class="supcom"></aside>
+        <aside>
+            <img src="img/supcom.jpg" class="supcom">
+        </aside>
 
     </section>
     
