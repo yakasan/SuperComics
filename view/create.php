@@ -11,10 +11,23 @@
         <article >
             <form method="get">
                 <fieldset>
-                    <legend class="text"> De 3 à 8 joueurs </legend>
+                    <legend class="text">Ajout de joueurs </legend>
                     <label for="pseudo"class="text"> Pseudo </label>
                     <input type="text" id="pseudo" name="pseudo">
                     <input type="submit" value="ajouter">
+                </fieldset>
+            </form>
+            
+            <form method="get">
+                <fieldset>
+                    <legend class="text">Sélection de joueurs éxistants </legend>
+                    <select>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <input type="submit" value="Sélectionner">
                 </fieldset>
             </form>
             
