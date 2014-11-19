@@ -1,4 +1,4 @@
-cd /home/rep/Documents/www/SuperComics/
+cd /home/chillamehdi/Documents/www
 git add -A
 git commit
 git push
