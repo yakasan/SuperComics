@@ -29,23 +29,26 @@
 
 
     </section>
-    <section>
-        <table> 
+   
+     <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
+
+    <section class="tabCenter">
+        <table > 
+
             <tr>
                 <td> Pseudo joueurs gagnant</td>
                 <td> Date de la partie gagnée</td>
             </tr>
-            <?php
-            foreach ($playerWinner as $key => $value) {
-                echo "<tr><td>".$value;
-             } 
-            ?>
+            
+            <?php foreach ($tableWin as $message): ?>
+            <tr>
+                <td> <?=$playerWin["pseudo"]?> </td>
+                <td> <?=$playerWin["date"]?> </td>
+            </tr>
+            <?php endforeach; ?>
             
         </table>
     </section>
-    
 
-     <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
-        
 </body>
 <?php include("view/footer.php");?>

@@ -39,11 +39,13 @@
                 <td> Pseudo joueurs gagnant</td>
                 <td> Date de la partie gagnée</td>
             </tr>
-            <?php
-            foreach ($playerWinner as $key => $value) {
-                echo "<tr><td>".$value;
-             } 
-            ?>
+            
+            <?php foreach ($tableWin as $playerWin): ?>
+            <tr>
+                <td> <?=$playerWin["pseudo"]?> </td>
+                <td> <?=$playerWin["date"]?> </td>
+            </tr>
+            <?php endforeach; ?>
             
         </table>
     </section>
