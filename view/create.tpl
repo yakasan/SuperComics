@@ -1,4 +1,4 @@
-<?php include("header.php");?>
+<?php include("view/header.php");?>
 <body>
     <header> 
         <h1>A qui de jouer ?</h1>
