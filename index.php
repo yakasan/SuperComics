@@ -1,5 +1,5 @@
 <?php 
-    include("view/header.php");
+    include("inc/header.inc.php");
 
 ?>
 
@@ -33,13 +33,13 @@
 
     </section>
    
-    <input type="submit" onclick="window.location='createController.php';" value="lancer le jeu" class="launchGameButton, typo" >
+    <input type="submit" onclick="window.location='controller/createController.php';" value="lancer le jeu" class="launchGameButton, typo" >
 
     <section class="tabCenter">
     
-        <?php include("view/playerWinController.php");?>
+        <?php include("inc/playerWin.inc.php");?>
         
     </section>
 
 </body>
-<?php include("view/footer.php");?>
+<?php include("inc/footer.inc.php");?>

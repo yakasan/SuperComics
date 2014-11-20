@@ -1,10 +1,5 @@
 <?php
-    include("/SuperComics/model/class.model.php");
-    $result = $connexion->query("SELECT * FROM player");
-    $playerWin=$result->fetchAll(PDO::FETCH_ASSOC);
-    
-    $playerWin = new SuperComics();
-    $tableWin = $playerWin->getAndJoinAll();
-    include("/SuperComics/index.tpl");
+
+    require_once("/SuperComics/view/playerWin.tpl");
 
 ?>
