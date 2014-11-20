@@ -33,7 +33,7 @@
 
     </section>
    
-    <input type="submit" onclick="window.location='createController.php';" value="lancer le jeu" class="launchGameButton, typo" >
+    <input type="submit" onclick="window.location='controller/createController.php';" value="lancer le jeu" class="launchGameButton, typo" >
 
     <section class="tabCenter">
     
