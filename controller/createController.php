@@ -1,3 +1,5 @@
 <?php
 
-include(view/create.php );
+include("view/create.tpl");
+
+?>
