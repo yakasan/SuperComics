@@ -1,3 +1,5 @@
+/* Balises générales de la page */
+
 body {
 
 	background-color: #323274;
@@ -6,6 +8,7 @@ body {
 	margin:auto;
 	width: 75%;
 }
+<<<<<<< HEAD
 input{
 	display: block;
 	margin: auto;
@@ -18,6 +21,10 @@ input{
 section.tabCenter table{
 	margin: 0 auto;
 }
+=======
+
+/* Balises spé textes */
+>>>>>>> 3dc67c45bb05e17be5b0adc5618db18f12762caa
 
 .text{
 	color:white;
@@ -25,11 +32,21 @@ section.tabCenter table{
  	text-align: center;
 }
 
+<<<<<<< HEAD
 .typo, h1{
+=======
+.typo {
+>>>>>>> 3dc67c45bb05e17be5b0adc5618db18f12762caa
 	text-align: center;
 	font-family: bangers;
 	color: #F27321;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+/* Balises spé table */
+
+section.tabCenter table{
+	margin: 0 auto;
 }
 
 table {
@@ -40,6 +57,7 @@ table, th, tr, td{
     border: 1px solid white;
 
 }
+<<<<<<< HEAD
 .player{
 	display: inline-block;
 	color:white;
@@ -76,3 +94,32 @@ table, th, tr, td{
  	width: 10%;
 
 }
+=======
+
+/* Balises spé images */
+
+img.supcom{
+	float: left;
+	max-width: 50%;
+	height: auto;
+}
+
+/* Balises spé formulaires */
+
+input.launchGameButton{
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	width: 250px;
+	height: 50px;
+	font-size: 220%;
+}
+
+
+
+
+
+
+
+>>>>>>> 3dc67c45bb05e17be5b0adc5618db18f12762caa

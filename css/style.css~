@@ -1,41 +1,52 @@
+/* Balises générales de la page */
+
 body {
 
 	background-color: #323274;
 	margin:auto;
 	width: 75%;
 }
-input.launchGameButton{
-	display: block;
-	margin: auto;
-	margin-top: 200px;
-	width: 250px;
-	height: 50px;
-	font-size: 220%;
 
-}
-img.supcom{
-	float: left;
-	width: auto;
-	height: 50%;
-}
+
+/* Balises spé textes */
 .text{
 	color:white;
  	font-family: arial;
  	text-align: center;
 }
 
-h1 {
+.typo {
 	text-align: center;
 	font-family: bangers;
 	color: #F27321;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
-
-table {
-    border-collapse: collapse;
+/* Balises spé table */
+section.tabCenter table{
+	margin: 0 auto;
 }
 
-table, th, tr, td{
-    border: 1px solid white;
-
+/* Balises spé images */
+img.supcom{
+	float: left;
+	max-width: 50%;
+	height: auto;
 }
+
+/* Balises spé formulaires */
+input.launchGameButton{
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	width: 250px;
+	height: 50px;
+	font-size: 220%;
+}
+
+
+
+
+
+
+

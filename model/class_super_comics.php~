@@ -3,9 +3,7 @@
 class Model {
 	private static $user = "stagiaire";
 	private static $pass = "stagiaire";
-	private static $db = "livre-d-or";
-
-	protected static $connexion = false;
+	private static $db = "SuperComics";
 
 	function getAll() {
 		$query = self::$connexion->query("SELECT * FROM ".$this->table);

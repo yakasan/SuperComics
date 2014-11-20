@@ -1,4 +1,7 @@
-<?php include("view/header.php");?>
+<?php 
+    include("view/header.php");
+
+?>
 
 <body class="index">
 
@@ -6,7 +9,7 @@
 <body>
 
     <header> 
-        <h1>SuperComics L'application </h1>
+        <h1 class="index">SuperComics L'application </h1>
         </br>
     </header>
 
@@ -30,24 +33,12 @@
 
     </section>
    
-     <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
+     <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton" ></a>
 
     <section class="tabCenter">
-        <table > 
-
-            <tr>
-                <td> Pseudo joueurs gagnant</td>
-                <td> Date de la partie gagnée</td>
-            </tr>
-            
-            <?php foreach ($tableWin as $message): ?>
-            <tr>
-                <td> <?=$playerWin["pseudo"]?> </td>
-                <td> <?=$playerWin["date"]?> </td>
-            </tr>
-            <?php endforeach; ?>
-            
-        </table>
+    
+        <?php include("view/playerWin.php");?>
+        
     </section>
 
 </body>

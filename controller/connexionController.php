@@ -1,11 +1,6 @@
 <?php
-
-try {
-
-    $connexion = new PDO ('mysql:host=localhost; dbname=SuperComics; charset=utf8', "stagiaire", "stagiaire");
-    
-} catch (PDOException $e){
-    $errorMessage = $e->getMessage();
-}
-
+    $bdd = 'mysql:host=localhost;dbname=SuperComics';
+    $user = 'stagiaire';
+    $mdp = 'stagiaire';
+    $connection = new PDO( $bdd, $user, $mdp );
 ?>
