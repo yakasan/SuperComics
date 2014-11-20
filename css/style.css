@@ -1,10 +1,12 @@
 body {
 
 	background-color: #323274;
+	background-image:url(/SuperComics/img/supcom.png);
+	background-repeat:no-repeat;
 	margin:auto;
 	width: 75%;
 }
-input.launchGameButton{
+input{
 	display: block;
 	margin: auto;
 	margin-top: 200px;
@@ -16,18 +18,14 @@ input.launchGameButton{
 section.tabCenter table{
 	margin: 0 auto;
 }
-img.supcom{
-	float: left;
-	max-width: 50%;
-	height: auto;
-}
+
 .text{
 	color:white;
  	font-family: arial;
  	text-align: center;
 }
 
-h1 {
+.typo, h1{
 	text-align: center;
 	font-family: bangers;
 	color: #F27321;
@@ -40,5 +38,41 @@ table {
 
 table, th, tr, td{
     border: 1px solid white;
+
+}
+.player{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+ 	border: solid 5px;
+ 	margin-top: 10%;
+ 	margin-left: 25%;
+ 	height: 5%;
+ 	width: 10%;
+
+}
+.vs{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 5px;
+ 	margin-top: 10%;
+ 	margin-left: 10%;
+ 	height: 5%;
+ 	width: 10%;
+
+}
+.challenger{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 5px;
+ 	margin-top: 10%;
+ 	margin-left: 10%;
+ 	height: 5%;
+ 	width: 10%;
 
 }
