@@ -19,6 +19,9 @@ fieldset{
 	color:white;
  	font-family: arial;
  	text-align: center;
+ 	background-color: #323274;
+ 	opacity: 0.85;
+ 	width: 99%;
 }
 
 .typo, h1{
@@ -100,6 +103,7 @@ img.supcom{
 
 input.launchGameButton{
 	display: block;
+	text-align: center;
 	margin: auto;
 	margin-top: 200px;
 	margin-bottom: 50px;
