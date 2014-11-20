@@ -33,7 +33,7 @@
 
     </section>
    
-     <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton, typo" ></a>
+     <a href="view/create.php"><input type="submit" onclick="window.location='createController.php';" value="lancer le jeu" class="launchGameButton, typo" ></a>
 
     <section class="tabCenter">
     
