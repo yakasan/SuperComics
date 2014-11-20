@@ -1,5 +1,8 @@
-
+<<<<<<< HEAD
 <?php include("/SuperComics/view/header.php");?>
+=======
+<?php include("view/header.php");?>
+>>>>>>> 07dc56440aaa7f11e34ee6811dc60c1f67da27a6
 <body>
     <header> 
         <h1>A qui de jouer ?</h1>
