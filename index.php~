@@ -1,5 +1,6 @@
 <?php 
     include("view/header.php");
+
 ?>
 
 <body class="index">
@@ -35,21 +36,7 @@
      <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton" ></a>
 
     <section class="tabCenter">
-        <table > 
-
-            <tr>
-                <td> Pseudo joueurs gagnant</td>
-                <td> Date de la partie gagnée</td>
-            </tr>
-            
-            <?php foreach ($tableWin as $playerWin):?>
-            <tr>
-                <td> <?=$playerWin["pseudo"]?> </td>
-                <td> <?=$playerWin["date"]?> </td>
-            </tr>
-            <?php endforeach; ?>
-            
-        </table>
+        <?php include("view/playerWin.php");?>
     </section>
 
 </body>

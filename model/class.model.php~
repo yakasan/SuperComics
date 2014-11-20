@@ -16,7 +16,7 @@ class SuperComics {
     );
     
     public $playerWinTable = array(
-        'playerWin' =>
+        'User' =>
             array(
                 'className' => 'playerWin',
                 'joinTable' => 'player',
