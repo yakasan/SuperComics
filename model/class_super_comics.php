@@ -1,6 +1,6 @@
 <?php
 
-class Model {
+class SuperComics {
 	private static $user = "stagiaire";
 	private static $pass = "stagiaire";
 	private static $db = "SuperComics";

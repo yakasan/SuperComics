@@ -1,4 +1,20 @@
-<?php include("view/header.php");?>
+<?php 
+    include("view/header.php");
+
+try {
+    $connexion = new PDO ('mysql:host=localhost; dbname=SuperComics; charset=utf8', "stagiaire", "stagiaire");
+    $result = $connexion->query("SELECT * FROM playerWin INNER JOIN player ON playerWin.id_player = player.id;");
+    $playerWin = $result->fetchAll(PDO::FETCH_ASSOC);
+    include("model/class_super_comics.php");
+    $playerWin = new PlayerWin();
+    $table = $playerWin->getAndJoinAll();
+    include("/SuperComics/index.tpl");
+    
+} catch (PDOException $e){
+    $errorMessage = $e->getMessage();
+}
+
+?>
 
 <body class="index">
 
@@ -30,7 +46,7 @@
 
     </section>
    
-     <a href="view/create.php"><input type="submit" value="lancer le jeu" class="launchGameButton" ></a>
+     <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton" ></a>
 
     <section class="tabCenter">
         <table > 
@@ -40,7 +56,7 @@
                 <td> Date de la partie gagnée</td>
             </tr>
             
-            <?php foreach ($tableWin as $playerWin): ?>
+            <?php foreach ($tableWin as $playerWin):?>
             <tr>
                 <td> <?=$playerWin["pseudo"]?> </td>
                 <td> <?=$playerWin["date"]?> </td>
