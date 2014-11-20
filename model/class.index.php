@@ -1,6 +1,6 @@
 <?php
 
-require_once("class/class_super_comics.php");
+require_once("model/class.model.php");
 
 class Index extends SuperComics {
 	protected $tableWin = "tableWin";
