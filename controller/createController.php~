@@ -1,5 +1,3 @@
 <?php
+include("/Supercomics/view/create.php");
 
-include('view/create.tpl');
-
-?>
