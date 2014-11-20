@@ -1,11 +1,12 @@
 <?php
 
 class SuperComics {
-	private static $user = "stagiaire";
-	private static $pass = "stagiaire";
-	private static $db = "SuperComics";
-
-		public $hasAndBelongsToMany = array(
+	public static $user = "stagiaire";
+	public static $pass = "stagiaire";
+	public static $db = "SuperComics";
+    $connexion = new PDO ('mysql:host=localhost; dbname='$db'; charset=utf8', $user, $pass);
+// model pour jointure de tables, a conserver
+	/*public $hasAndBelongsToMany = array(
         'User' =>
             array(
                 'className' => 'User',
@@ -13,10 +14,10 @@ class SuperComics {
                 'foreignKey' => 'game_id',
                 'associationForeignKey' => 'user_id'      
            )
-    );
+    );*/
     
     public $playerWinTable = array(
-        'User' =>
+        'playerWin' =>
             array(
                 'className' => 'playerWin',
                 'joinTable' => 'player',
@@ -24,6 +25,7 @@ class SuperComics {
                 'associationForeignKey' => 'playerWin_id'      
            )
     );
+
 	function getAll() {
 		$query = self::$connexion->query("SELECT * FROM ".$this->table);
 		return $query;

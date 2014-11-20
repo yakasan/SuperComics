@@ -9,7 +9,7 @@
 <body>
 
     <header> 
-        <h1>SuperComics L'application </h1>
+        <h1 class="typo">SuperComics L'application </h1>
         </br>
     </header>
 
@@ -33,7 +33,7 @@
 
     </section>
    
-     <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton" ></a>
+     <a href="view/create.php"><input type="submit" onclick="window.location='newMess.php';" value="lancer le jeu" class="launchGameButton, typo" ></a>
 
     <section class="tabCenter">
     
