@@ -1,10 +1,7 @@
 <?php
-include("model/class.model.php");
-    $result = $connexion->query("SELECT * FROM playerWin INNER JOIN player ON playerWin.id_player = player.id;");
+    include("/SuperComics/model/class.model.php");
+    $result = $connexion->query("SELECT * FROM player");
     $playerWin=$result->fetchAll(PDO::FETCH_ASSOC);
-    
-    $playerWin = new SuperComics();
-    $tableWin = $playerWin->getAndJoinAll();
     include("/SuperComics/index.tpl");
 
 ?>

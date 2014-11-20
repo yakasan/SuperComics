@@ -1,10 +1,10 @@
 <?php
 
 class SuperComics {
+    public static $dns = "mysql:host=localhost; dbname=SuperComics";
 	public static $user = "stagiaire";
 	public static $pass = "stagiaire";
-	public static $db = "SuperComics";
-    $connexion = new PDO ('mysql:host=localhost; dbname='$db'; charset=utf8', $user, $pass);
+    $connexion = new PDO ($dns, $user, $pass);
 // model pour jointure de tables, a conserver
 	/*public $hasAndBelongsToMany = array(
         'User' =>

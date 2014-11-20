@@ -5,10 +5,10 @@
         <td> Date de la partie gagnée</td>
     </tr>
     
-    <?php foreach ($playerWinTable as $playerWin):?>
+    <?php foreach ($playerWin as $player):?>
     <tr>
-        <td> <?=$playerWin["pseudo"]?> </td>
-        <td> <?=$playerWin["date"]?> </td>
+        <td> <?=$player["pseudo"]?> </td>
+        <td> <?=$player["date"]?> </td>
     </tr>
     <?php endforeach; ?>
             
