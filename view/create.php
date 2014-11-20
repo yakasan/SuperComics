@@ -13,14 +13,14 @@
                 <fieldset>
                     <legend class="text">Ajout de joueurs </legend>
                     <label for="pseudo"class="text"> Pseudo </label>
-                    <input type="text" id="pseudo" name="pseudo">
-                    <input type="submit" value="ajouter">
+                    <input type="text" class="text" name="pseudo">
+                    <input type="submit" value="ajouter" class="typo">
                 </fieldset>
             </form>
             
             <form method="get">
                 <fieldset>
-                    <legend class="text">Sélection de joueurs éxistants </legend>
+                    <legend class="text">Sélection de joueurs existants </legend>
                     <select>
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -33,7 +33,7 @@
             
         </article>
         
-        <section class="tabCenter">
+        <section class="tabCenter playerList">
             <table class="text">
                 <tr>
                     <td>Joueur X </td>

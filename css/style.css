@@ -9,17 +9,8 @@ body {
 	width: 75%;
 }
 
-input{
-	display: block;
-	margin: auto;
-	margin-top: 200px;
-	margin-bottom: 50px;
-	width: 250px;
-	height: 50px;
-	font-size: 220%;
-}
-section.tabCenter table{
-	margin: 0 auto;
+fieldset{
+	text-align: center;
 }
 
 /* Balises spé textes */
@@ -93,6 +84,10 @@ table, th, tr, td{
 
 }
 
+table.playerList{
+	margin-bottom: 250px;
+}
+
 /* Balises spé images */
 
 img.supcom{
@@ -112,4 +107,6 @@ input.launchGameButton{
 	height: 50px;
 	font-size: 220%;
 }
+
+
 
