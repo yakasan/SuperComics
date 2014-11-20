@@ -37,7 +37,7 @@
 
     <section class="tabCenter">
     
-        <?php include("view/playerWin.php");?>
+        <?php include("view/playerWinController.php");?>
         
     </section>
 
