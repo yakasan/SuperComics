@@ -5,6 +5,7 @@ class SuperComics {
 	private static $pass = "stagiaire";
 	private static $db = "SuperComics";
 
+<<<<<<< HEAD
 		public $hasAndBelongsToMany = array(
         'User' =>
             array(
@@ -24,6 +25,9 @@ class SuperComics {
                 'associationForeignKey' => 'playerWin_id'      
            )
     );
+=======
+		
+>>>>>>> 92c25675c7d515ef0ba4e9d142d449e0eecf502b
 	function getAll() {
 		$query = self::$connexion->query("SELECT * FROM ".$this->table);
 		return $query;
