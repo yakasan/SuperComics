@@ -5,15 +5,7 @@ class SuperComics {
 	private static $pass = "stagiaire";
 	private static $db = "SuperComics";
 
-		public $hasAndBelongsToMany = array(
-        'User' =>
-            array(
-                'className' => 'User',
-                'joinTable' => 'games_users',
-                'foreignKey' => 'game_id',
-                'associationForeignKey' => 'user_id'      
-           )
-    );
+		
 	function getAll() {
 		$query = self::$connexion->query("SELECT * FROM ".$this->table);
 		return $query;
