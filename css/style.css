@@ -9,8 +9,17 @@ body {
 	width: 75%;
 }
 
-fieldset{
-	text-align: center;
+input{
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	width: 250px;
+	height: 50px;
+	font-size: 220%;
+}
+section.tabCenter table{
+	margin: 0 auto;
 }
 
 /* Balises spé textes */
@@ -19,9 +28,6 @@ fieldset{
 	color:white;
  	font-family: arial;
  	text-align: center;
- 	background-color: #323274;
- 	opacity: 0.85;
- 	width: 99%;
 }
 
 .typo, h1{
@@ -88,6 +94,8 @@ table, th, tr, td{
 
 }
 
+<<<<<<< HEAD
+=======
 section.playerMeter{
 	display: inline-block;
 	color:white;
@@ -107,6 +115,7 @@ table.playerList{
 	margin-bottom: 250px;
 }
 
+>>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de
 /* Balises spé images */
 
 img.supcom{
@@ -119,7 +128,6 @@ img.supcom{
 
 input.launchGameButton{
 	display: block;
-	text-align: center;
 	margin: auto;
 	margin-top: 200px;
 	margin-bottom: 50px;
@@ -128,6 +136,8 @@ input.launchGameButton{
 	font-size: 220%;
 }
 
+<<<<<<< HEAD
+=======
 input.defyButton{
 	display: block;
 	margin-right: auto;
@@ -138,3 +148,4 @@ input.defyButton{
 	font-size: 220%;
 }
 
+>>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de

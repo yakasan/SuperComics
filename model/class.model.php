@@ -4,7 +4,7 @@ class SuperComics {
     public static $dns = "mysql:host=localhost; dbname=SuperComics";
 	public static $user = "stagiaire";
 	public static $pass = "stagiaire";
-    $connexion = new PDO ($dns, $user, $pass);
+    $connexion = new PDO($dns, $user, $pass);
 // model pour jointure de tables, a conserver
 	/*public $hasAndBelongsToMany = array(
         'User' =>
