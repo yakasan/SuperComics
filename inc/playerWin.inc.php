@@ -1,7 +1,7 @@
 <table > 
     <tr>
-        <td> Pseudo joueurs gagnant</td>
-        <td> Date de la partie gagnée</td>
+        <th> Pseudo joueurs gagnant </th>
+        <th> Date de la partie gagnée </th>
     </tr>
     
     <?php
