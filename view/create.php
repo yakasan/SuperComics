@@ -9,7 +9,7 @@
     <section>
 
         <article >
-            <form action="createController.php" method="POST">
+            <form action="../process/addPlayer.php" method="POST">
                 <fieldset>
                     <legend class="text">Ajout de joueurs </legend>
                     <label for="pseudo"class="text"> Pseudo </label>
@@ -18,28 +18,6 @@
                 </fieldset>
             </form>
             
-            <form method="POST">
-                <fieldset>
-                    <legend class="text">Sélection de joueurs éxistants </legend>
-                    
-                    <input type="submit" value="Sélectionner">
-                </fieldset>
-            </form>
-            
-        </article>
-        
-        <section class="tabCenter">
-            <table class="text">
-                <tr>
-                    <td>Joueur X </td>
-                    <td>Pseudo X </td>
-                </tr>
-            </table>
-        </section class="tabCenter">
-        <a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
-
-    </section>
-   
-        
+        </article>    
 </body>
 <?php include("footer.php");?>

@@ -1,5 +1,5 @@
 <?php
-if($_POST['pseudo']){
+if($_POST['select']){
 	
 	if(!empty($_POST)){
 
@@ -18,7 +18,7 @@ if($_POST['pseudo']){
 	    /*
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
-	    $pseudo = $dbh->quote($_POST['pseudo']); 
+	    $pseudo = $dbh->quote($_POST['select']); 
 	    $compteur = '0'; 
 	    
 	    
