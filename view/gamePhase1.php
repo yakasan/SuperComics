@@ -11,7 +11,7 @@
             joueur 1
 
         </aside>
-        <aside class="vs">
+        <aside class="vs typo">
             VS
         </aside>
         <aside class="challenger">

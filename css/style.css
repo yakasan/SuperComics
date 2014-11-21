@@ -68,7 +68,7 @@ th{
 	color:white;
  	font-family: arial;
  	text-align: center;
- 	border: solid 5px;
+ 	border: solid 2px;
  	border-radius: 10px;
  	margin-top: 10%;
  	margin-left: 25%;
@@ -78,15 +78,14 @@ th{
 }
 .vs{
 	display: inline-block;
-	color:white;
- 	font-family: arial;
- 	text-align: center;
-  	border: solid 5px;
+  	border: solid 2px;
   	border-radius: 10px;
  	margin-top: 5%;
  	margin-left: 5%;
  	height: 5%;
  	width: 10%;
+	font-size: 220%;
+
 
 }
 .challenger{
@@ -94,7 +93,7 @@ th{
 	color:white;
  	font-family: arial;
  	text-align: center;
-  	border: solid 5px;
+  	border: solid 2px;
   	border-radius: 10px;
  	margin-top: 10%;
  	margin-left: 5%;
@@ -106,6 +105,17 @@ th{
 <<<<<<< HEAD
 =======
 section.playerMeter{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 2px;
+  	border-radius: 10px;
+ 	margin-top: 5%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	height: 250px;
+ 	width: 400px;
 
 }
 
