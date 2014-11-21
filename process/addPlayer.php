@@ -1,16 +1,33 @@
-
 <?php
-function addplayer(){
 
-if (isset($_POST['pseudo'])) {
+	
+	if(!empty($_POST)){
 
-    $pseudo = $_POST("pseudo");
-    $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-    $sql = 'INSERT INTO player(pseudo) 
-            VALUES ($pseudo)';
-    $req = $connexion->query($sql);
-    //print_r($req);
+//J'ouvre ma base de donnée
+	$dbname= 'SuperComics';
+	$user = 'stagiaire';
+	$password = 'stagiaire';
+	$host = 'localhost';
 
-    }
+    $dbh = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbh->exec("SET CHARACTER SET utf8");
+
+
+
+    /*
+     * je récupère le type et le nom du formulaire fictif : 
+     */
+    $pseudo = $dbh->quote($_POST['pseudo']); 
+    $compteur = '0'; 
+    
+    
+    
+     /* Insertion d'une ligne dans MySQL*/
+    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
+
 }
+
+   
+header('location:../controller/createController.php');
 ?>
