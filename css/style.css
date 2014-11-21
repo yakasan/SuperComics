@@ -24,7 +24,7 @@ section.tabCenter table{
 
 /* Balises spé textes */
 
-.text{
+.text, table{
 	color:white;
  	font-family: arial;
  	text-align: center;
@@ -42,6 +42,7 @@ section.tabCenter table{
 
 section.tabCenter table{
 	margin: 0 auto;
+	margin-bottom: 25px;
 }
 
 table {
@@ -50,6 +51,7 @@ table {
 
 table, th, tr, td{
     border: 1px solid white;
+    color: white;
 
 }
 
@@ -87,12 +89,23 @@ table, th, tr, td{
   	border: solid 5px;
   	border-radius: 10px;
  	margin-top: 10%;
- 	margin-left: 10%;
+ 	margin-left: 5%;
  	height: 20%;
  	width: 20%;
 
 }
 
+<<<<<<< HEAD
+=======
+section.playerMeter{
+
+}
+
+table.playerList{
+	margin-bottom: 250px;
+}
+
+>>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de
 /* Balises spé images */
 
 img.supcom{
@@ -113,3 +126,16 @@ input.launchGameButton{
 	font-size: 220%;
 }
 
+<<<<<<< HEAD
+=======
+input.defyButton{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 200px;
+	width: 250px;
+	height: 50px;
+	font-size: 220%;
+}
+
+>>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de
