@@ -22,6 +22,8 @@
 
     </section>
    
-        
+    <section class="playerMeter">
+        fonction a créer
+    </section>
 </body>
 <?php include("footer.php");?>
