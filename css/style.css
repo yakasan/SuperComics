@@ -17,6 +17,7 @@ input{
 	width: 250px;
 	height: 50px;
 	font-size: 220%;
+	color:white;
 }
 section.tabCenter table{
 	margin: 0 auto;
@@ -102,7 +103,10 @@ th{
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81d99414aea15d575e897b42f3ecb99a6f2932bb
 section.playerMeter{
 	display: inline-block;
  	font-family: arial;
@@ -141,7 +145,10 @@ input.launchGameButton{
 	font-size: 220%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81d99414aea15d575e897b42f3ecb99a6f2932bb
 input.defyButton{
 	display: block;
 	margin-right: auto;

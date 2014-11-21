@@ -18,6 +18,16 @@
                 </fieldset>
             </form>
             
+<<<<<<< HEAD
+=======
+            <form method="POST">
+                <fieldset>
+                    <legend class="text">Sélection de joueurs éxistants </legend>
+                    
+                </fieldset>
+            </form>
+            
+>>>>>>> 81d99414aea15d575e897b42f3ecb99a6f2932bb
         </article>    
 </body>
 <?php include("footer.php");?>
