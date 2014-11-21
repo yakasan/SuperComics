@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 20 Novembre 2014 à 16:06
+-- Généré le: Mer 19 Novembre 2014 à 16:50
 -- Version du serveur: 5.5.40-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.5
 
@@ -102,26 +102,9 @@ CREATE TABLE IF NOT EXISTS `participation` (
 CREATE TABLE IF NOT EXISTS `player` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `pseudo` varchar(255) NOT NULL,
-  `compteur` int(11) DEFAULT NULL,
+  `compteur` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
-
---
--- Contenu de la table `player`
---
-
-INSERT INTO `player` (`id`, `pseudo`, `compteur`) VALUES
-(1, 'Seto', 0),
-(2, 'SuperConnard', 0),
-(3, 'BadCatin', NULL),
-(4, 'yaka', NULL),
-(5, 'badPute', NULL),
-(6, 'superPoulet', NULL),
-(7, 'captain LowD', NULL),
-(8, 'superpute', NULL),
-(9, 'supercatin', NULL),
-(10, 'superNoob', NULL),
-(11, 'Badguys', NULL);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -134,28 +117,7 @@ CREATE TABLE IF NOT EXISTS `player_win` (
   `id_player` int(11) NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
-
---
--- Contenu de la table `player_win`
---
-
-INSERT INTO `player_win` (`id`, `id_player`, `date`) VALUES
-(1, 6, '2014-11-14'),
-(2, 1, '2014-11-04'),
-(3, 2, '2014-11-12'),
-(4, 3, '2014-11-05'),
-(5, 4, '2014-11-07'),
-(6, 5, '2014-11-08'),
-(7, 6, '2014-11-01'),
-(8, 7, '2014-11-29'),
-(9, 8, '2014-11-30'),
-(10, 9, '2014-11-19'),
-(11, 10, '2014-11-20'),
-(12, 11, '0000-00-00'),
-(13, 12, '0000-00-00'),
-(14, 11, '2014-11-08'),
-(15, 12, '2014-11-09');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

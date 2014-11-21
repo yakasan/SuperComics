@@ -1,0 +1,29 @@
+<?php
+
+    $dns = "mysql:host=localhost; dbname=SuperComics";
+    $user = "stagiaire";
+    $pass = "stagiaire";
+    $connexion = new PDO($dns, $user, $pass);
+
+?>
+
+<table > 
+
+    <tr>
+        <td> Pseudo joueurs gagnant</td>
+        <td> Date de la partie gagnée</td>
+    </tr>
+    
+    <?php
+
+    $pdo = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
+    $sql = 'SELECT * FROM player';
+    $req = $pdo->query($sql);
+    //print_r($req);
+    while($row = $req->fetch()){
+        echo "<tr><td>".$row['pseudo']."</td><td>".$row['id']."</td></tr>";
+    }
+    ?>
+    
+            
+</table>
