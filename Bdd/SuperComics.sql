@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 20 Novembre 2014 à 16:06
+-- Généré le: Ven 21 Novembre 2014 à 11:02
 -- Version du serveur: 5.5.40-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.5
 
@@ -131,7 +131,7 @@ INSERT INTO `player` (`id`, `pseudo`, `compteur`) VALUES
 
 CREATE TABLE IF NOT EXISTS `player_win` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_player` int(11) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
@@ -140,22 +140,22 @@ CREATE TABLE IF NOT EXISTS `player_win` (
 -- Contenu de la table `player_win`
 --
 
-INSERT INTO `player_win` (`id`, `id_player`, `date`) VALUES
-(1, 6, '2014-11-14'),
-(2, 1, '2014-11-04'),
-(3, 2, '2014-11-12'),
-(4, 3, '2014-11-05'),
-(5, 4, '2014-11-07'),
-(6, 5, '2014-11-08'),
-(7, 6, '2014-11-01'),
-(8, 7, '2014-11-29'),
-(9, 8, '2014-11-30'),
-(10, 9, '2014-11-19'),
-(11, 10, '2014-11-20'),
-(12, 11, '0000-00-00'),
-(13, 12, '0000-00-00'),
-(14, 11, '2014-11-08'),
-(15, 12, '2014-11-09');
+INSERT INTO `player_win` (`id`, `pseudo`, `date`) VALUES
+(1, '6', '2014-11-14'),
+(2, '1', '2014-11-04'),
+(3, '2', '2014-11-12'),
+(4, '3', '2014-11-05'),
+(5, '4', '2014-11-07'),
+(6, '5', '2014-11-08'),
+(7, '6', '2014-11-01'),
+(8, '7', '2014-11-29'),
+(9, '8', '2014-11-30'),
+(10, '9', '2014-11-19'),
+(11, '10', '2014-11-20'),
+(12, '11', '0000-00-00'),
+(13, '12', '0000-00-00'),
+(14, '11', '2014-11-08'),
+(15, '12', '2014-11-09');
 
 -- --------------------------------------------------------
 
