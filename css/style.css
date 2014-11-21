@@ -49,10 +49,18 @@ table {
     border-collapse: collapse;
 }
 
-table, th, tr, td{
+table, tr, td{
     border: 1px solid white;
     color: white;
+    width: 500px; 
 
+}
+
+th{
+    border: 3px solid white;
+    font-weight: bold;
+    color: white;
+    text-align:center;
 }
 
 .player{
@@ -60,7 +68,7 @@ table, th, tr, td{
 	color:white;
  	font-family: arial;
  	text-align: center;
- 	border: solid 5px;
+ 	border: solid 2px;
  	border-radius: 10px;
  	margin-top: 10%;
  	margin-left: 25%;
@@ -70,15 +78,14 @@ table, th, tr, td{
 }
 .vs{
 	display: inline-block;
-	color:white;
- 	font-family: arial;
- 	text-align: center;
-  	border: solid 5px;
+  	border: solid 2px;
   	border-radius: 10px;
  	margin-top: 5%;
  	margin-left: 5%;
  	height: 5%;
  	width: 10%;
+	font-size: 220%;
+
 
 }
 .challenger{
@@ -86,7 +93,7 @@ table, th, tr, td{
 	color:white;
  	font-family: arial;
  	text-align: center;
-  	border: solid 5px;
+  	border: solid 2px;
   	border-radius: 10px;
  	margin-top: 10%;
  	margin-left: 5%;
@@ -98,6 +105,17 @@ table, th, tr, td{
 <<<<<<< HEAD
 =======
 section.playerMeter{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 2px;
+  	border-radius: 10px;
+ 	margin-top: 5%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	height: 250px;
+ 	width: 400px;
 
 }
 

@@ -5,7 +5,6 @@
 
 <body class="index">
 
-
 <body>
 
     <header> 
@@ -13,9 +12,7 @@
         </br>
     </header>
 
-
     <section>
-        
         <article class="text">Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
                 vitesse, adresse, connaissances, ingéniosité, mémoire... <br>
                 Tous vos talents seront mis à l’épreuve. SUPER COMICS vous propose trois modes de jeux. <br>
@@ -29,16 +26,12 @@
                 Être le plus rapide à retirer ses bas - ses chaussettes. Fabriquer un avion en papier qui vole 
                 le plus loin possible, nommer des supervilains, rédiger l’alphabet à l’envers...
         </article>
-
-
     </section>
    
     <input type="submit" onclick="window.location='controller/createController.php';" value="lancer le jeu" class="launchGameButton, typo" >
 
     <section class="tabCenter">
-    
         <?php include("inc/playerWin.inc.php");?>
-        
     </section>
 
 </body>
