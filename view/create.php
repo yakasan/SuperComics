@@ -1,4 +1,4 @@
-<?php include("header.php");?>
+<?php include("../inc/header.inc.php");?>
 <body>
     <header> 
         <h1>A qui de jouer ?</h1>
@@ -7,9 +7,9 @@
 
 
     <section>
-        
+
         <article >
-            <form method="get">
+            <form action="../process/addPlayer.php" method="POST">
                 <fieldset>
                     <legend class="text">Ajout de joueurs </legend>
                     <label for="pseudo"class="text"> Pseudo </label>
@@ -18,19 +18,16 @@
                 </fieldset>
             </form>
             
-            <form method="get">
+<<<<<<< HEAD
+=======
+            <form method="POST">
                 <fieldset>
                     <legend class="text">Sélection de joueurs éxistants </legend>
-                    <select>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                    <input type="submit" value="Sélectionner">
+                    
                 </fieldset>
             </form>
             
+<<<<<<< HEAD
         </article>
         
         <section class="tabCenter">
@@ -46,5 +43,9 @@
     </section>
    
         
+=======
+>>>>>>> 81d99414aea15d575e897b42f3ecb99a6f2932bb
+        </article>    
+>>>>>>> 81d2a0eeb87a60455a5a10e5242e8f1ba8a03900
 </body>
 <?php include("footer.php");?>

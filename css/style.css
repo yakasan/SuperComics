@@ -17,6 +17,7 @@ input{
 	width: 250px;
 	height: 50px;
 	font-size: 220%;
+	color:white;
 }
 section.tabCenter table{
 	margin: 0 auto;
@@ -53,10 +54,18 @@ table {
     border-collapse: collapse;
 }
 
-table, th, tr, td{
+table, tr, td{
     border: 1px solid white;
     color: white;
+    width: 500px; 
 
+}
+
+th{
+    border: 3px solid white;
+    font-weight: bold;
+    color: white;
+    text-align:center;
 }
 
 .player{
