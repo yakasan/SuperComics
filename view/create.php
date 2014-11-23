@@ -41,7 +41,7 @@
                 </tr>
             </table>
         </section class="tabCenter">
-        <a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
+        <a href="gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
 
     </section>
    
