@@ -19,7 +19,21 @@ include("../view/create.php");
 	    }
     ?>
 
-    <input type='submit' value='checked'>
+    <input type='submit' value='Sélection'>
+    </fieldset>
+</form>
+
+<form method="POST" action="../process/seePlayer.php">
+    <fieldset>
+        <legend class="text">Sélection des joueurs</legend>
+    <?php      
+		$i=0;
+	    while($row = $req->fetch()){
+	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
+	    }
+    ?>
+
+    <input type='submit' value='Suppression'>
     </fieldset>
 </form>
 

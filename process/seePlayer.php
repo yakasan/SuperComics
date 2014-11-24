@@ -46,6 +46,22 @@ else if(isset($_POST['checkOut']))
 		'pseudoPlayer' => $pseudoPlayer
 		));
 	}
+}else if(isset($_POST['delete']))
+{
+    //recupérer ces valeurs dans un array
+	$tabChecked = $_POST['delete'];
+	
+	//print_r($tabChecked);
+	
+	foreach ($tabChecked as $pseudo) 
+	{
+		$pseudoPlayer = addslashes($pseudo);
+		$req = $dbh->prepare("DELETE FROM player
+					WHERE pseudo = :pseudoPlayer");
+		$req->execute(array(
+		'pseudoPlayer' => $pseudoPlayer
+		));
+	}
 }else{	
     header('location:../controller/createController.php');
 }

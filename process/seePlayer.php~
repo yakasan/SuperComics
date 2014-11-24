@@ -29,8 +29,24 @@ if(isset($_POST['checked']))
 		));
 	}
 }	
-else
-{	
+else if(isset($_POST['checkOut']))
+{
+    //recupérer ces valeurs dans un array
+	$tabChecked = $_POST['checkOut'];
+	
+	//print_r($tabChecked);
+	
+	foreach ($tabChecked as $pseudo) 
+	{
+		$pseudoPlayer = addslashes($pseudo);
+		$req = $dbh->prepare("UPDATE player 
+		            SET checked ='0'
+					WHERE pseudo = :pseudoPlayer");
+		$req->execute(array(
+		'pseudoPlayer' => $pseudoPlayer
+		));
+	}
+}else{	
     header('location:../controller/createController.php');
 }
    
