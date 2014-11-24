@@ -13,7 +13,6 @@
     </header>
 
     <section>
-        <?= include("inc/")?>
         <article class="text">Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
                 vitesse, adresse, connaissances, ingéniosité, mémoire... <br>
                 Tous vos talents seront mis à l’épreuve. SUPER COMICS vous propose trois modes de jeux. <br>
