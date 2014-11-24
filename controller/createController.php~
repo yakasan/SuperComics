@@ -25,27 +25,35 @@ include("../view/create.php");
 
 
 <section class="tabCenter">
-    <table class="text">
-        <tr>
-            <td>Joueur n° </td>
-            <td>Pseudo </td>
-        </tr>
-        
-        <?php
-        
-            $sql = "SELECT * 
-            FROM player
-            WHERE checked='1'";
-            $req = $connexion->query($sql);
-            //print_r($req);
-            $i=1;
-            while($row = $req->fetch()){
-                echo "<tr><td>Joueur ".$i."</td><td>".$row['pseudo']."</td></tr>";
-                $i++;
-            }
-        
-        ?>
-    </table>
+    <form method="POST" action="../process/seePlayer.php">
+        <table class="text">
+            <tr>
+                <td>Joueur n° </td>
+                <td>Pseudo </td>
+                <td>Supprimer Joueur</td>
+            </tr>
+            
+            <?php
+            
+                $sql = "SELECT * 
+                FROM player
+                WHERE checked='1'";
+                $req = $connexion->query($sql);
+                //print_r($req);
+                $i=1;
+                while($row = $req->fetch()){
+                    echo "<tr><td>Joueur ".$i."</td><td>".$row['pseudo']."</td> <td> <input type='checkbox' name='checkOut[".$row['pseudo']."]' value='".$row['pseudo']."'></td></tr> ";
+                    $i++;
+                }
+            
+            ?>
+            <tr>
+                <td> ---- </td>
+                <td> ---- </td>
+                <td> <input type='submit' value='Déselection'> </td>
+            </tr>
+        </table>
+    </form>
 </section class="tabCenter">
 <a href="../controller/gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
 

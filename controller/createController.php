@@ -19,7 +19,7 @@ include("../view/create.php");
 	    }
     ?>
 
-    <input type='submit' value='checked'>
+    <input type='submit' value='Sélection'>
     </fieldset>
 </form>
 
