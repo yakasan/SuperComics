@@ -11,7 +11,7 @@
         <h1 class="typo">SuperComics L'application </h1>
         </br>
     </header>
-SYLVAIN EST UN TOCARD!!!!!
+
     <section>
         <article class="text">Affrontez votre famille et vos amis dans des duels aussi variés que loufoques : <br>
                 vitesse, adresse, connaissances, ingéniosité, mémoire... <br>
