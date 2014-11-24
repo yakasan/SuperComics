@@ -47,7 +47,7 @@ include("../view/create.php");
         ?>
     </table>
 </section class="tabCenter">
-<a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
+<a href="../controller/gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
 
 </section>
 
