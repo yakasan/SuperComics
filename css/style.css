@@ -17,6 +17,7 @@ input{
 	width: 250px;
 	height: 50px;
 	font-size: 220%;
+	color:white;
 }
 section.tabCenter table{
 	margin: 0 auto;
@@ -102,8 +103,6 @@ th{
 
 }
 
-<<<<<<< HEAD
-=======
 section.playerMeter{
 	display: inline-block;
 	color:white;
@@ -123,7 +122,6 @@ table.playerList{
 	margin-bottom: 250px;
 }
 
->>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de
 /* Balises spé images */
 
 img.supcom{
@@ -144,8 +142,6 @@ input.launchGameButton{
 	font-size: 220%;
 }
 
-<<<<<<< HEAD
-=======
 input.defyButton{
 	display: block;
 	margin-right: auto;
@@ -156,4 +152,3 @@ input.defyButton{
 	font-size: 220%;
 }
 
->>>>>>> 01e4c9e7dd095d40113f898ceb95a5972c9335de
