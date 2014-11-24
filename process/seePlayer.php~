@@ -11,9 +11,6 @@
 
 //print_r($_POST['checked']);
 
-<<<<<<< HEAD
-=======
-
 if(isset($_POST['checked']))
 {    
 	//recupérer ces valeurs dans un array
@@ -39,5 +36,4 @@ else
    
 header('location:../controller/createController.php');
 
->>>>>>> c26a19bbdbc4263f87aaecee8f1757b7dd0618a0
 ?>
