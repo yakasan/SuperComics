@@ -1,5 +1,5 @@
 <?php
-if($_POST['select']){
+if($_POST['checked']){
 	
 	if(!empty($_POST)){
 
@@ -19,13 +19,12 @@ if($_POST['select']){
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
 	    $pseudo = $dbh->quote($_POST['select']); 
-	    $compteur = '0'; 
-	    
-	    
-	    
-	     /* Insertion d'une ligne dans MySQL*/
-	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
 
+	    $checked = $dbh -> exec("UPDATE player WHERE pseudo=$pseudo SET checked='1'");
+	    
+	     /* Insertion d'une ligne dans MySQL
+	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
+*/
 	}		
 }else{
 

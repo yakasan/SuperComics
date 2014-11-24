@@ -9,7 +9,7 @@ include("../view/create.php");
 
 ?>
 
-<form method="POST">
+<form method="POST" action="../process/seePlayer.php">
     <fieldset>
         <legend class="text">Sélection des joueurs</legend>
     <?php      
