@@ -20,7 +20,7 @@ if($_POST['checked']){
 	     */
 	    $pseudo = $dbh->quote($_POST['select']); 
 
-	    $checked = $dbh -> exec("UPDATE player WHERE pseudo=$pseudo SET checked='1'");
+	    $checked = $dbh -> exec("UPDATE player SET checked='1'");
 	    
 	     /* Insertion d'une ligne dans MySQL
 	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
