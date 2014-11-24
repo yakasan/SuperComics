@@ -39,6 +39,8 @@
 
 	    $dbh->exec("SET CHARACTER SET utf8");
 
+
+
 	    /*
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
@@ -49,7 +51,7 @@
 	     /* Insertion d'une ligne dans MySQL
 	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
 */
-	}
+	}		
 }else{
 
 	header('location:../controller/createController.php');}
