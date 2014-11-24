@@ -15,21 +15,36 @@ include("../view/create.php");
     <?php      
 		$i=0;
 	    while($row = $req->fetch()){
-	        echo "<input type='checkbox' name='".$row['pseudo']."' value='.$i.'>".$row['pseudo'];
-	        $i++;
+	        echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
 	    }
     ?>
 
-    <input type='submit' value='select'>
+    <input type='submit' value='checked'>
     </fieldset>
 </form>
+
 
 <section class="tabCenter">
     <table class="text">
         <tr>
-            <td>Joueur X </td>
-            <td>Pseudo X </td>
+            <td>Joueur n° </td>
+            <td>Pseudo </td>
         </tr>
+        
+        <?php
+        
+            $sql = "SELECT * 
+            FROM player
+            WHERE checked='1'";
+            $req = $connexion->query($sql);
+            //print_r($req);
+            $i=1;
+            while($row = $req->fetch()){
+                echo "<tr><td>Joueur ".$i."</td><td>".$row['pseudo']."</td></tr>";
+                $i++;
+            }
+        
+        ?>
     </table>
 </section class="tabCenter">
 <a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>

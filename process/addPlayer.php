@@ -13,16 +13,12 @@ if($_POST['pseudo']){
 	    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	    $dbh->exec("SET CHARACTER SET utf8");
 
-
-
 	    /*
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
 	    $pseudo = $dbh->quote($_POST['pseudo']); 
 	    $compteur = '0'; 
-	    
-	    
-	    
+
 	     /* Insertion d'une ligne dans MySQL*/
 	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
 
