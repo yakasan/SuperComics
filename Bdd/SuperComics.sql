@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Ven 21 Novembre 2014 à 11:46
+-- Généré le: Lun 24 Novembre 2014 à 10:29
 -- Version du serveur: 5.5.40-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.5
 
@@ -103,25 +103,32 @@ CREATE TABLE IF NOT EXISTS `player` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `pseudo` varchar(255) NOT NULL,
   `compteur` int(11) DEFAULT NULL,
+  `checked` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=67 ;
 
 --
 -- Contenu de la table `player`
 --
 
-INSERT INTO `player` (`id`, `pseudo`, `compteur`) VALUES
-(1, 'Seto', 0),
-(2, 'SuperConnard', 0),
-(3, 'BadCatin', NULL),
-(4, 'yaka', NULL),
-(5, 'badPute', NULL),
-(6, 'superPoulet', NULL),
-(7, 'captain LowD', NULL),
-(8, 'superpute', NULL),
-(9, 'supercatin', NULL),
-(10, 'superNoob', NULL),
-(11, 'Badguys', NULL);
+INSERT INTO `player` (`id`, `pseudo`, `compteur`, `checked`) VALUES
+(3, 'BadCatin', 0, 0),
+(4, 'yaka', 0, 0),
+(5, 'badPute', 0, 0),
+(6, 'superPoulet', 0, 0),
+(7, 'captain LowD', 0, 0),
+(8, 'superpute', 0, 0),
+(9, 'supercatin', 0, 0),
+(10, 'superNoob', 0, 0),
+(11, 'Badguys', 0, 0),
+(14, 'raslecul', 0, 0),
+(15, 'test', 0, 0),
+(16, 'test repop direct', 0, 0),
+(62, 'sefgefze', 0, 0),
+(63, 'fvbedvb', 0, 0),
+(64, 'pupute', 0, 0),
+(65, 'c vxb', 0, 0),
+(66, 'super toto', 0, 0);
 
 -- --------------------------------------------------------
 
