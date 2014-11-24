@@ -23,6 +23,10 @@ section.tabCenter table{
 	margin: 0 auto;
 }
 
+fieldset{
+	margin: 5px 5px 5px 5px;
+}
+
 /* Balises spé textes */
 
 .text, table{
@@ -104,7 +108,7 @@ th{
 }
 
 section.playerMeter{
-	display: inline-block;
+	display: block;
 	color:white;
  	font-family: arial;
  	text-align: center;
