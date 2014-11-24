@@ -61,8 +61,15 @@ th{
     font-weight: bold;
     color: white;
     text-align:center;
+
 }
 
+input[type="checkbox"] {
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    text-align:center;
+}
 .player{
 	display: inline-block;
 	color:white;
