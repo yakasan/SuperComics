@@ -1,27 +1,7 @@
 <?php
 include("../view/create.php");
-
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-    $sql = 'SELECT * 
-            FROM player';
-    $req = $connexion->query($sql);
-    //print_r($req);
-
 ?>
-
-<form method="POST" action="../process/seePlayer.php">
-    <fieldset>
-        <legend class="text">Sélection des joueurs</legend>
-    <?php      
-		$i=0;
-	    while($row = $req->fetch()){
-	        echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
-	    }
-    ?>
-
-    <input type='submit' value='Sélection'>
-    </fieldset>
-</form>
 
 <form method="POST" action="../process/seePlayer.php">
     <fieldset>
@@ -37,6 +17,25 @@ include("../view/create.php");
     ?>
 
     <input type='submit' value='Suppression'>
+    </fieldset>
+</form>
+
+
+<form method="POST" action="../process/seePlayer.php">
+    <fieldset>
+        <legend class="text">Sélection des joueurs</legend>
+    <?php      
+        $sql = 'SELECT * 
+                FROM player';
+        $req = $connexion->query($sql);
+        //print_r($req);
+		$i=0;
+	    while($row = $req->fetch()){
+	        echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
+	    }
+    ?>
+
+    <input type='submit' value='Sélection'>
     </fieldset>
 </form>
 
