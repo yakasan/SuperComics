@@ -7,7 +7,6 @@ include("../view/create.php");
     $req = $connexion->query($sql);
     //print_r($req);
 
-<<<<<<< HEAD
 ?>
 
 <form method="POST">
@@ -34,9 +33,9 @@ include("../view/create.php");
     </table>
 </section class="tabCenter">
 <a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
-=======
 
 
+<?php
 echo"<form>";
 	$i=0;
     while($row = $req->fetch()){
@@ -46,7 +45,6 @@ echo"<form>";
 
     echo"<input type='submit' value='Sélectionner'>";
 echo"</form>";
-
 
 ?>
 
@@ -59,7 +57,6 @@ echo"</form>";
 	    </table>
 	</section class="tabCenter">
 	<a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
->>>>>>> 81d99414aea15d575e897b42f3ecb99a6f2932bb
 
 </section>
 
