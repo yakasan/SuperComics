@@ -17,6 +17,6 @@ class Index extends SuperComics {
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
 
-	}
+}
 	
 ?>

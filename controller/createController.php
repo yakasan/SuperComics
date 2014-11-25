@@ -1,11 +1,11 @@
 <?php
 include("../view/create.php");
+include("/SuperComics/model/class.create.php");
+
 
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-    $sql = 'SELECT * 
-            FROM player';
+    $sql = 'SELECT * FROM player';
     $req = $connexion->query($sql);
-    //print_r($req);
 
 ?>
 
@@ -27,9 +27,8 @@ include("../view/create.php");
     <fieldset>
         <legend class="text">Supression de joueurs</legend>
     <?php      
-		$sql = "SELECT * 
-                FROM player";
-                $req = $connexion->query($sql);
+		$sql = "SELECT * FROM player";
+        $req = $connexion->query($sql);
                 
 	    while($row = $req->fetch()){
 	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
