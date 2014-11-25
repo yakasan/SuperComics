@@ -1,5 +1,0 @@
-<?php
-
-    require_once("/SuperComics/view/playerWin.tpl");
-
-?>

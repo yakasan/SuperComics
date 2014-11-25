@@ -1,9 +1,6 @@
 <?php
-if($_POST['select']){
-	
-	if(!empty($_POST)){
 
-		//J'ouvre ma base de donnée
+//J'ouvre ma base de donnée
 		$dbname= 'SuperComics';
 		$user = 'stagiaire';
 		$password = 'stagiaire';
@@ -11,25 +8,64 @@ if($_POST['select']){
 
 	    $dbh = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
 	    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    $dbh->exec("SET CHARACTER SET utf8");
 
+//print_r($_POST['checked']);
 
-
-	    /*
-	     * je récupère le type et le nom du formulaire fictif : 
-	     */
-	    $pseudo = $dbh->quote($_POST['select']); 
-	    $compteur = '0'; 
-	    
-	    
-	    
-	     /* Insertion d'une ligne dans MySQL*/
-	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
-
-	}		
-}else{
-
-	header('location:../controller/createController.php');}
+if(isset($_POST['checked']))
+{    
+	//recupérer ces valeurs dans un array
+	$tabChecked = $_POST['checked'];
+	
+	//print_r($tabChecked);
+	
+	foreach ($tabChecked as $pseudo) 
+	{
+		$pseudoPlayer = addslashes($pseudo);
+		$req = $dbh->prepare("UPDATE player 
+		            SET checked ='1'
+					WHERE pseudo = :pseudoPlayer");
+		$req->execute(array(
+		'pseudoPlayer' => $pseudoPlayer
+		));
+	}
+}	
+else if(isset($_POST['checkOut']))
+{
+    //recupérer ces valeurs dans un array
+	$tabChecked = $_POST['checkOut'];
+	
+	//print_r($tabChecked);
+	
+	foreach ($tabChecked as $pseudo) 
+	{
+		$pseudoPlayer = addslashes($pseudo);
+		$req = $dbh->prepare("UPDATE player 
+		            SET checked ='0'
+					WHERE pseudo = :pseudoPlayer");
+		$req->execute(array(
+		'pseudoPlayer' => $pseudoPlayer
+		));
+	}
+}else if(isset($_POST['delete']))
+{
+    //recupérer ces valeurs dans un array
+	$tabChecked = $_POST['delete'];
+	
+	//print_r($tabChecked);
+	
+	foreach ($tabChecked as $pseudo) 
+	{
+		$pseudoPlayer = addslashes($pseudo);
+		$req = $dbh->prepare("DELETE FROM player
+					WHERE pseudo = :pseudoPlayer");
+		$req->execute(array(
+		'pseudoPlayer' => $pseudoPlayer
+		));
+	}
+}else{	
+    header('location:../controller/createController.php');
+}
    
 header('location:../controller/createController.php');
+
 ?>

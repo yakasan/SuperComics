@@ -1,4 +1,5 @@
-<?php include("header.php");?>
+
+<?php include("view/header.php");?>
 <body>
     <header> 
         <h1>A qui de jouer ?</h1>
@@ -33,14 +34,15 @@
             
         </article>
         
-        <aside>
+        <section class="tabCenter">
             <table class="text">
                 <tr>
                     <td>Joueur X </td>
                     <td>Pseudo X </td>
                 </tr>
             </table>
-        </aside>
+        </section class="tabCenter">
+        <a href="gamePhase1.tpl"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
 
     </section>
    
