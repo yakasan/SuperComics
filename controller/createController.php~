@@ -25,9 +25,12 @@ include("../view/create.php");
 
 <form method="POST" action="../process/seePlayer.php">
     <fieldset>
-        <legend class="text">Sélection des joueurs</legend>
+        <legend class="text">Supression de joueurs</legend>
     <?php      
-		$i=0;
+		$sql = "SELECT * 
+                FROM player";
+                $req = $connexion->query($sql);
+                
 	    while($row = $req->fetch()){
 	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
 	    }
