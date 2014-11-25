@@ -9,10 +9,9 @@ echo "<form method='POST' action='../process/getChallenger.php'>";
 		$sql = "SELECT * FROM player WHERE checked='1'";
 	    $req = $connexion->query($sql);
 	    echo "<td>"; 
-	            
-			    while($row = $req->fetch()){
-			        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
-			   }
+	    while($row = $req->fetch()){
+	        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
+	   }
 	    echo "</td>"; 
 	    echo "<td>";
 	    	echo"VS";
