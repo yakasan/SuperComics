@@ -3,13 +3,11 @@ include("../view/create.php");
 include("/SuperComics/model/class.create.php");
 
 
-	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-    $sql = 'UPDATE player SET compteur=0';
+    $sql = addplayer();
     $req = $connexion->query($sql);
     $sql = 'SELECT * 
             FROM player';
     $req = $connexion->query($sql);
-
 ?>
 
 <form method="POST" action="../process/seePlayer.php">
