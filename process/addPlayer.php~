@@ -23,10 +23,7 @@ if($_POST['pseudo']){
 	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
 
 	}		
-}else{
+}else{header('location:../controller/createController.php');
 
-	header('location:../controller/createController.php');
-}
-   
 header('location:../controller/createController.php');
 ?>
