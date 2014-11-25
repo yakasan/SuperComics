@@ -23,40 +23,6 @@ include("../view/create.php");
     </fieldset>
 </form>
 
-<section class="tabCenter">
-    <table class="text">
-        <tr>
-            <td>Joueur X </td>
-            <td>Pseudo X </td>
-        </tr>
-    </table>
-</section class="tabCenter">
-<a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
-
-
-<?php
-echo"<form>";
-	$i=0;
-    while($row = $req->fetch()){
-        echo "<input type='checkbox' name='".$row['pseudo']."' value='.$i.'>".$row['pseudo'];
-        $i++;
-    }
-
-    echo"<input type='submit' value='Sélectionner'>";
-echo"</form>";
-
-?>
-
-<section class="tabCenter">
-	    <table class="text">
-	        <tr>
-	            <td>Joueur X </td>
-	            <td>Pseudo X </td>
-	        </tr>
-	    </table>
-	</section class="tabCenter">
-	<a href="gamePhase1.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
-
 <form method="POST" action="../process/seePlayer.php">
     <fieldset>
         <legend class="text">Supression de joueurs</legend>
@@ -107,5 +73,6 @@ echo"</form>";
     </form>
 </section class="tabCenter">
 <a href="../controller/gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
+
 </section>
 
