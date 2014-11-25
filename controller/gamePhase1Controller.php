@@ -1,11 +1,6 @@
 <?php
 include("../view/gamePhase1.php");
 $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-$sql = "TRUNCATE TABLE card_temp";
-	    $req = $connexion->query($sql);
-$sql = "INSERT INTO card_temp SELECT * FROM card";
-	    $req = $connexion->query($sql);
-
 echo "<table>"; 
 echo "<form method='POST' action='../process/getChallenger.php'>";            
     echo "<tr>"; 

@@ -9,24 +9,23 @@ if($_POST['pseudo']){
 		$password = 'stagiaire';
 		$host = 'localhost';
 
-	    $dbh = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
-	    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    $dbh->exec("SET CHARACTER SET utf8");
+	    $connexion = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
+	    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	    $connexion->exec("SET CHARACTER SET utf8");
 
 	    /*
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
-	    $pseudo = $dbh->quote($_POST['pseudo']); 
+	    $pseudo = $connexion->quote($_POST['pseudo']); 
 	    $compteur = '0'; 
 
 	     /* Insertion d'une ligne dans MySQL*/
-	    $count = $dbh->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
+	    $count = $connexion->exec("INSERT INTO player(pseudo, compteur) VALUES ($pseudo, $compteur)");
 
 	}		
 }else{
 
-	header('location:../controller/createController.php');
-}
+	header('location:../controller/createController.php');}
    
 header('location:../controller/createController.php');
 ?>

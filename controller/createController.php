@@ -2,6 +2,8 @@
 include("../view/create.php");
 
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
+    $sql = 'UPDATE player SET compteur=0';
+    $req = $connexion->query($sql);
     $sql = 'SELECT * 
             FROM player';
     $req = $connexion->query($sql);
