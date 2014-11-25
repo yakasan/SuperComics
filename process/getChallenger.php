@@ -19,16 +19,11 @@ if(isset($_POST['challenger'] , $_POST['challenged']))
 
 	if($challenger == $challenged) 
 	{
-	?>
-	    <script type="text/javascript"> 
-	        alert('Probleme de selection des joueurs! \n Veuillez selectionner deux joueurs differents');
-	         window.history.back(-1)
-         </script>";
-	<?php
+		header('location:../controller/gamePhase1Controller.php');
 	}
-
+		
 }else{	
-    header('location:../controller/gamePhase2Controller.php');
+	    header('location:../controller/gamePhase2Controller.php');
 }
 
 ?>
