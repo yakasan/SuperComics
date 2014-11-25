@@ -9,8 +9,8 @@
 	    $dbh = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
 	    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-print_r($_POST['challenger']);
-print_r($_POST['challenged']);
+//print_r($_POST['challenger']);
+//print_r($_POST['challenged']);
 
 if(isset($_POST['challenger'] , $_POST['challenged']))
 {    
@@ -23,7 +23,7 @@ if(isset($_POST['challenger'] , $_POST['challenged']))
 	}
 		
 }else{	
-    header('location:../controller/gamePhase2Controller.php');
+	    header('location:../controller/gamePhase2Controller.php');
 }
 
 ?>
