@@ -46,6 +46,7 @@ else{
         $_SESSION['cardRandName']=$row['name'];
         $_SESSION['cardRandText']=$row['text'];
         $_SESSION['cardRandColor']=$row['color'];
+     
     }
 
 

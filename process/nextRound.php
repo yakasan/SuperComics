@@ -1,8 +1,37 @@
 <?php
-	
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-	$pseudo = $connexion->quote($_SESSION['pseudo']); 
-    $sql = 'UPDATE player SET compteur= compteur+1 WHERE pseudo=$pseudo ';
-    header('location:../controller/gamePhase2Controller.php');
+	
+if (isset($_POST['playerWinner'])) {
+	$playerWinner= $_POST['playerWinner'];
 
+    $sql = "UPDATE player SET compteur=compteur+1 WHERE pseudo='$playerWinner' ";
+    $req = $connexion->query($sql);
+
+    $req = $connexion->query("SELECT compteur FROM player WHERE pseudo='$playerWinner'");
+    $row = $req->fetch();
+    $compteur =$row['compteur'];
+
+    $req =$connexion->query("SELECT max_point FROM game WHERE id='1'");
+    $row =$req->fetch();
+    $maxPoint = $row['max_point'];
+   	// var_dump($compteur);
+	// var_dump($maxPoint);
+    if($compteur<$maxPoint){
     ?>
+
+    <script type="text/javascript"> 
+	    alert('Le joueur <?=$playerWinner?> a gagné 1 point !!!');
+	    window.location ="../controller/gamePhase1Controller.php";
+    </script>
+
+<?php 
+	}else{
+		$date_win='yfiour';
+		$sql = "INSERT INTO player_win (pseudo,date_win) VALUES ($playerWinner,$date_win) ";
+    	$req = $connexion->query($sql);
+    	
+		//$_SESSION['playerWinner']=$playerWinner;
+	//	header('location:../controller/finalController.php');
+	}
+}
+?>
