@@ -12,7 +12,11 @@ echo "<form method='POST' action='../process/getChallenger.php'>";
 	    echo "<td>"; 
 	            
 			    while($row = $req->fetch()){
+<<<<<<< HEAD
 			        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'><span>".$row['pseudo']."<span><br>";
+=======
+			        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 			   }
 	    echo "</td>"; 
 	    
@@ -26,7 +30,11 @@ echo "<form method='POST' action='../process/getChallenger.php'>";
             WHERE checked='1'";
             $req = $connexion->query($sql);
 	   while($row = $req->fetch()){
+<<<<<<< HEAD
 	        echo "<input type='radio' name='challenged' value='".$row['pseudo']."'><span>".$row['pseudo']."<span><br>";
+=======
+	        echo "<input type='radio' name='challenged' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 	   }
        echo "</td>";  
     echo "</tr>";

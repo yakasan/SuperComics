@@ -8,6 +8,11 @@ include("../view/create.php");
             FROM player';
     $req = $connexion->query($sql);
     //print_r($req);
+<<<<<<< HEAD
+=======
+
+?>
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 
 ?>
 
@@ -21,9 +26,24 @@ include("../view/create.php");
 	        }
         ?>
 
+<<<<<<< HEAD
         <input type='submit' value='Sélection'>
         </fieldset>
     </form>
+=======
+<form method="POST" action="../process/seePlayer.php">
+    <fieldset>
+        <legend class="text">Supression de joueurs</legend>
+    <?php      
+		$sql = "SELECT * 
+                FROM player";
+                $req = $connexion->query($sql);
+                
+	    while($row = $req->fetch()){
+	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
+	    }
+    ?>
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 
     <form method="POST" action="../process/seePlayer.php">
         <fieldset>

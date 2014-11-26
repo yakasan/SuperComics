@@ -1,9 +1,13 @@
 <body>
 <?php 
 session_start();
+<<<<<<< HEAD
 //var_dump($_SESSION['playerWinner']); 
 include("../inc/header.inc.php");
 ?>
+=======
+//var_dump($_SESSION['playerWinner']); ?>
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 
 <div id="header">
     <header> 
