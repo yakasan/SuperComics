@@ -8,23 +8,32 @@ include("../view/create.php");
             FROM player';
     $req = $connexion->query($sql);
     //print_r($req);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 35f9b3d72231e3c0603be6360ea0fdd3a2f3428b
+
+?>
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 
 ?>
 
-<form method="POST" action="../process/seePlayer.php">
-    <fieldset>
-        <legend class="text">Sélection des joueurs</legend>
-    <?php      
-		$i=0;
-	    while($row = $req->fetch()){
-	        echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
-	    }
-    ?>
+    <form method="POST" action="../process/seePlayer.php">
+        <fieldset>
+            <legend class="text">Sélection des joueurs</legend>
+        <?php      
+		    $i=0;
+	        while($row = $req->fetch()){
+	            echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."</span>";
+	        }
+        ?>
 
-    <input type='submit' value='Sélection'>
-    </fieldset>
-</form>
-
+<<<<<<< HEAD
+        <input type='submit' value='Sélection'>
+        </fieldset>
+    </form>
+=======
 <form method="POST" action="../process/seePlayer.php">
     <fieldset>
         <legend class="text">Supression de joueurs</legend>
@@ -37,19 +46,31 @@ include("../view/create.php");
 	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
 	    }
     ?>
+>>>>>>> 81ca1d2ba9b12fa8b08e84aded644e32ad46f0b0
 
-    <input type='submit' value='Suppression'>
-    </fieldset>
-</form>
+    <form method="POST" action="../process/seePlayer.php">
+        <fieldset>
+            <legend class="text">Supression de joueurs</legend>
+        <?php      
+		    $sql = "SELECT * 
+                    FROM player";
+                    $req = $connexion->query($sql);
+                    
+	        while($row = $req->fetch()){
+	            echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."</span>";
+	        }
+        ?>
 
+        <input type='submit' value='Suppression'>
+        </fieldset>
+    </form>
 
-<section class="tabCenter">
     <form method="POST" action="../process/seePlayer.php">
         <table class="text">
             <tr>
-                <td>Joueur n° </td>
-                <td>Pseudo </td>
-                <td>Supprimer Joueur</td>
+                <th>Joueur n° </th>
+                <th>Pseudo </th>
+                <th>Supprimer Joueur</th>
             </tr>
             
             <?php
@@ -67,11 +88,14 @@ include("../view/create.php");
             
             ?>
             <tr>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> <input type='submit' value='Déselection'> </td>
+                <td colspan="3"> 
+                    <input type='submit' value='Déselection' >
+    </form> 
+                    <input type="button" value="Alors, on joue?"  onclick="window.location='../controller/gamePhase1Controller.php'" class="launchGameButton" >
+                </td>
             </tr>
         </table>
+<<<<<<< HEAD
     </form>
 </section class="tabCenter">
 <section>
@@ -85,6 +109,13 @@ include("../view/create.php");
     </form>
 </section>
 <a href="../controller/gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
+=======
+    
+        
+    
+    <?php include("../inc/footer.inc.php");?>
+</div>
+>>>>>>> 35f9b3d72231e3c0603be6360ea0fdd3a2f3428b
 
-</section>
+</body>
 

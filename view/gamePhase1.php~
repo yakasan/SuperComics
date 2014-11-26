@@ -9,5 +9,5 @@
 <?php include("../inc/nav.inc.php");?>
 
 <div id="content">
-
+<?php include("../inc/footer.inc.php");?>
 
