@@ -17,7 +17,8 @@ if($_POST['pseudo']){
 	     * je récupère le type et le nom du formulaire fictif : 
 	     */
 	    $pseudo = $connexion->quote($_POST['pseudo']); 
-	    $pseudo = str_replace(" ", "-",$pseudo);
+	    $pseudo= ucwords($pseudo);
+	    $pseudo = str_replace(" ", "",$pseudo);
 	    $compteur = '0'; 
 
 	     /* Insertion d'une ligne dans MySQL*/

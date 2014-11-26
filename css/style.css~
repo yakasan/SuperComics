@@ -48,12 +48,12 @@ table, tr, td{
     border: 1px solid white;
     color: white;
     width: 500px; 
+    padding:10px
 
 }
 
 table.center{
     text-align:center;
-
 }
 
 th{
@@ -109,7 +109,8 @@ input[type="checkbox"] {
 input[type="radio"] {
     display:inline-block;
     margin:auto;
-    vertical-align:middle; 
+    vertical-align:middle;
+    margin-left:10px;
 }
 
 /* Balises div title */
