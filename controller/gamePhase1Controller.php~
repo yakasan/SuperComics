@@ -17,7 +17,7 @@ echo "<form method='POST' action='../process/getChallenger.php'>";
 	    echo "</td>"; 
 	    
 	    echo "<td>";
-	    	echo"<h2>VS</h2>";
+	    	echo"<h3>VS</h3>";
 	    echo "</td>";
 	    
 	    echo "<td>";

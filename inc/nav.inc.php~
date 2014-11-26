@@ -1,12 +1,13 @@
+<!doctype html>
+	<html lang="fr">
+	
 	<head>
 		<link rel="stylesheet" href="./css/bootstrap.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
-	<div id="footer">
-	    <p class="text">
-	        Copyright : YAKASAN / SETO / REPGARENT
-	    </p>
-    </div>
-</html>
+	
+	<div id="image_nav">
+	    <img src="../img/supcom.png" class="image_nav">
+	</div>

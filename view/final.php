@@ -1,11 +1,26 @@
+<body>
 <?php 
 session_start();
-var_dump($_SESSION['playerWinner']); ?>
+//var_dump($_SESSION['playerWinner']); 
+include("../inc/header.inc.php");
+?>
 
-<h1> LE JOUEUR </h1>
-<h1> <?= $_SESSION['playerWinner']?> </h1>
-<h1>REMPORTE LA PARTIE </h1>
+<div id="header">
+    <header> 
+        <h1 class="typo">SuperComics L'application </h1>
+        </br>
+    </header>
+</div>
+<?php include("../inc/nav.inc.php");?>
 
-<input type='button' value='NOUVELLE PARTIE' onClick="location.href='../controller/createController.php'" > 
+<div id="content">
+    <h2> LE JOUEUR </h2>
+    <h1> <?= $_SESSION['playerWinner']?> </h1>
+    <h2>REMPORTE LA PARTIE </h2>
 
-<input type='button' value='RETOUR INDEX' onClick="location.href='../index.php'" > 
+    <input type='button' value='NOUVELLE PARTIE' onClick="location.href='../controller/createController.php'" > 
+
+    <input type='button' value='RETOUR INDEX' onClick="location.href='../index.php'" > 
+</div>
+
+</body>

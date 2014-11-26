@@ -14,7 +14,7 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
     </div>
 
 
-    <table class="bord_hidden">
+    <table>
         <tr>
             <td>
                 <input type='radio' name='playerWinner' value= "<?= $_SESSION['challenger'] ?>" > 
