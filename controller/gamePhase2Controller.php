@@ -41,10 +41,7 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
 
 </form>
 
-<<<<<<< HEAD
-    </section>
-    
-    <FORM>
+    <form>
 <script type="text/javascript">
     function timer(){
             var clock;
@@ -64,14 +61,14 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
         </script>
         <INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
     
-    </FORM> 
+    </form> 
     <div class="clock" style="margin:2em;">
 
     </div>
 
 </form>
-=======
+
 <?php include("../inc/footer.inc.php");?>
 </div>
 </body>
->>>>>>> 35f9b3d72231e3c0603be6360ea0fdd3a2f3428b
+
