@@ -3,7 +3,7 @@ include("../view/gamePhase1.php");
 include("/SuperComics/model/class.model.php");
 
 echo "<table>"; 
-echo "<form method='POST' action='../process/getChallenger.php'>";            
+echo "<form method='POST' action='../process/gamePhase2Controller.php'>";            
     echo "<tr>"; 
 		$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
 		$sql = "SELECT * FROM player WHERE checked='1'";
@@ -11,7 +11,7 @@ echo "<form method='POST' action='../process/getChallenger.php'>";
 	    echo "<td>"; 
 	    while($row = $req->fetch()){
 	        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
-	   }
+	    }
 	    echo "</td>"; 
 	    echo "<td>";
 	    	echo"VS";
