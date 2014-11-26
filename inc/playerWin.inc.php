@@ -31,6 +31,5 @@
         echo "<tr><td>".$row['pseudo']."</td><td>".$row['date_win']."</td></tr>";
     }
 
-
     ?>
 </table>

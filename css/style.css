@@ -47,9 +47,12 @@ table, tr, td{
     margin-top:10px;
     border: 1px solid white;
     color: white;
-    text-align:center;
     width: 500px; 
 
+}
+
+table.center{
+    text-align:center;
 }
 
 th{
@@ -103,7 +106,9 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] {
+    display:inline-block;
     margin:auto;
+    vertical-align:middle; 
 }
 
 /* Balises div title */
