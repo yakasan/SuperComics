@@ -34,7 +34,7 @@ include("../view/create.php");
                 $req = $connexion->query($sql);
                 
 	    while($row = $req->fetch()){
-	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];
+	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."<span>";
 	    }
     ?>
     <input type='submit' value='Suppression'>
