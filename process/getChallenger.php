@@ -14,7 +14,6 @@
 if (isset($_POST['challenger']) && isset($_POST['challenged'])) {
 	$challenger =$_POST['challenger'];
 	$challenged =$_POST['challenged'];
-
 	if($challenger == $challenged) 
 	{
 			

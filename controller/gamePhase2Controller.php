@@ -35,4 +35,30 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
         <input type="submit" value="WIN!" class="defyButton typo" >
 
     </section>
+    
+    <FORM>
+<script type="text/javascript">
+    function timer(){
+            var clock;
+
+            $(document).ready(function() {
+
+                clock = new FlipClock($('.clock'), {
+                    clockFace: 'Counter',
+                    autoStart: true
+                });
+                clock.setTime(5);
+
+                clock.setCountdown(true);
+            })alert("FINI TOCARD")
+            ;
+}
+        </script>
+        <INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
+    
+    </FORM> 
+    <div class="clock" style="margin:2em;">
+
+    </div>
+
 </form>

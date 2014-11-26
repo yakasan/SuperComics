@@ -1,20 +1,13 @@
 <?php
 include("../view/create.php");
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 240545d4ebad7185f4f98fb5f9c9416074368a2d
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
     $sql = 'UPDATE player SET compteur=0';
     $req = $connexion->query($sql);
     $sql = 'SELECT * 
             FROM player';
     $req = $connexion->query($sql);
-<<<<<<< HEAD
     //print_r($req);
-=======
->>>>>>> 240545d4ebad7185f4f98fb5f9c9416074368a2d
 
 ?>
 
@@ -81,6 +74,16 @@ include("../view/create.php");
         </table>
     </form>
 </section class="tabCenter">
+<section>
+    <form action="../process/maxPoint.php" method="POST">
+        <fieldset>
+            <legend class="text">Modification du nombre de manches</legend>
+            <label for="pseudo"class="text"> Nombre de manches gagantes  </label>
+            <input type="text" id="max_point" name="max_point">
+            <input type="submit" value="Modifier">
+        </fieldset>
+    </form>
+</section>
 <a href="../controller/gamePhase1Controller.php"><input type="submit" value="Alors, on joue?" class="launchGameButton" ></a>
 
 </section>
