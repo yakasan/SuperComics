@@ -11,11 +11,19 @@
 
 //print_r($_POST['challenger']);
 //print_r($_POST['challenged']);
+if (empty($_POST['challenger']) || empty($_POST['challenged'])) {
+	?>
+	    <script type="text/javascript"> 
+	        alert('Probleme de selection des joueurs! \n Veuillez selectionner deux joueurs differents');
+	         window.history.back(-1)
+         </script>";
+	<?php
+}
+
 if (isset($_POST['challenger']) && isset($_POST['challenged'])) {
 	$challenger =$_POST['challenger'];
 	$challenged =$_POST['challenged'];
-
-	if($challenger == $challenged) 
+	if ($challenger == $challenged)
 	{
 			
 	?>

@@ -2,7 +2,7 @@
 include("../view/gamePhase1.php");
 $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
 echo "<table>"; 
-echo "<form method='POST' action='../process/gamePhase2Controller.php'>";            
+echo "<form method='POST' action='../process/getChallenger.php'>";            
     echo "<tr>"; 
 		
 		$sql = "SELECT * 
@@ -10,11 +10,10 @@ echo "<form method='POST' action='../process/gamePhase2Controller.php'>";
 	            WHERE checked='1'";
 	            $req = $connexion->query($sql);
 	    echo "<td>"; 
-
-	    while($row = $req->fetch()){
-	        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
-	    }
-
+	            
+			    while($row = $req->fetch()){
+			        echo "<input type='radio' name='challenger' value='".$row['pseudo']."'>".$row['pseudo']."<br>";
+			   }
 	    echo "</td>"; 
 	    echo "<td>";
 	    	echo"VS";
