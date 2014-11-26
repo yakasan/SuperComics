@@ -52,8 +52,8 @@ else{
         header('location:../process/getChallenger.php');
     }else{
         $_SESSION['cardRandId']=$row['id'];
-        $_SESSION['cardRandName']=$row['name'];
-        $_SESSION['cardRandText']=$row['text'];
+        $_SESSION['cardRandName']=utf8_encode($row['name']);
+        $_SESSION['cardRandText']=utf8_encode($row['text']);
         $_SESSION['cardRandColor']=$row['color'];
      
     }

@@ -9,7 +9,7 @@ include("../inc/header.inc.php");?>
     </header>
 </div>
 
-<?php include("../");?>
+<?php include("../inc/nav.inc.php");?>
 
 <div id="content">
    
