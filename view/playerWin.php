@@ -8,7 +8,7 @@
     <?php foreach ($playerWinTable as $playerWin):?>
     <tr>
         <td> <?=$playerWin["pseudo"]?> </td>
-        <td> <?=$playerWin["date"]?> </td>
+        <td> <?=$playerWin["date_win"]?> </td>
     </tr>
     <?php endforeach; ?>
             

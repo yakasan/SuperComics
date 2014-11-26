@@ -37,9 +37,8 @@
             ORDER BY date DESC';
     $req = $connexion->query($sql);
     //print_r($req);
-    //mehdi en chie !!!!!
     while($row = $req->fetch()){
-        echo "<tr><td>".$row['pseudo']."</td><td>".$row['date']."</td></tr>";
+        echo "<tr><td>".$row['pseudo']."</td><td>".$row['date_win']."</td></tr>";
     }
 
 

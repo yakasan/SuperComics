@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
 	
 if (isset($_POST['playerWinner'])) {
@@ -26,12 +28,14 @@ if (isset($_POST['playerWinner'])) {
 
 <?php 
 	}else{
-		$date_win='yfiour';
-		$sql = "INSERT INTO player_win (pseudo,date_win) VALUES ($playerWinner,$date_win) ";
+
+        $date_win=date("d-m-Y");
+		$sql = "INSERT INTO player_win (pseudo , date_win ) VALUES ('$playerWinner', '$date_win') ";
     	$req = $connexion->query($sql);
+
     	
-		//$_SESSION['playerWinner']=$playerWinner;
-	//	header('location:../controller/finalController.php');
+		$_SESSION['playerWinner']=$playerWinner;
+		header('location:../controller/finalController.php');
 	}
 }
 ?>
