@@ -1,14 +1,20 @@
 <?php
 include("../view/create.php");
-include("/SuperComics/model/class.create.php");
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 240545d4ebad7185f4f98fb5f9c9416074368a2d
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
     $sql = 'UPDATE player SET compteur=0';
     $req = $connexion->query($sql);
     $sql = 'SELECT * 
             FROM player';
     $req = $connexion->query($sql);
+<<<<<<< HEAD
+    //print_r($req);
+=======
+>>>>>>> 240545d4ebad7185f4f98fb5f9c9416074368a2d
 
 ?>
 
@@ -30,8 +36,9 @@ include("/SuperComics/model/class.create.php");
     <fieldset>
         <legend class="text">Supression de joueurs</legend>
     <?php      
-		$sql = "SELECT * FROM player";
-        $req = $connexion->query($sql);
+		$sql = "SELECT * 
+                FROM player";
+                $req = $connexion->query($sql);
                 
 	    while($row = $req->fetch()){
 	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'>".$row['pseudo'];

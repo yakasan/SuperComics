@@ -8,9 +8,3 @@ function getByIdAndJoin($id){
 		$query->execute();
 		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
-
-function addPlayer(){
-	$query=parent::$connexion->prepare('UPDATE player SET compteur=0');
-	$query->execute;
-	return $query->fetchAll(PDO::FETCH_ASSOC);
-}

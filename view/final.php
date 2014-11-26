@@ -1,6 +1,6 @@
 <?php 
 session_start();
-var_dump($_SESSION['playerWinner']); ?>
+//var_dump($_SESSION['playerWinner']); ?>
 
 <h1> LE JOUEUR </h1>
 <h1> <?= $_SESSION['playerWinner']?> </h1>
