@@ -59,7 +59,7 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
             }
         </script>
         <div class="clock" style="margin:2em;">
-        <INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
+			<INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
         </div>
     </form> 
 

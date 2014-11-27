@@ -14,7 +14,7 @@
 if (empty($_POST['challenger']) || empty($_POST['challenged'])) {
 	?>
 	    <script type="text/javascript"> 
-	        alert('Probleme de selection des joueurs! \n Veuillez selectionner deux joueurs differents');
+	        alert('Veuillez selectionner deux joueurs! ');
 	         window.history.back(-1)
          </script>";
 	<?php
@@ -55,6 +55,10 @@ else{
         $_SESSION['cardRandName']=utf8_encode($row['name']);
         $_SESSION['cardRandText']=utf8_encode($row['text']);
         $_SESSION['cardRandColor']=$row['color'];
+		
+		$cardName=$_SESSION['cardRandName'] ; 
+		$sql ="UPDATE card SET used=1 WHERE name='$cardName'";
+		$req = $connexion->query($sql);
      
     }
 
