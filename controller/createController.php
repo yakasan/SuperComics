@@ -47,6 +47,16 @@ include("../view/create.php");
         <label for="pseudo"class="text"> Nombre de manches gagantes  </label>
         <input type="text" id="max_point" name="max_point">
         <input type="submit" value="Modifier">
+        <?php      
+		$sql = "SELECT * 
+                FROM game
+                WHERE max_point";
+                $req = $connexion->query($sql);
+                
+	    while($row = $req->fetch()){
+	        echo "<span class='text_center'> Vous avez choisi de faire une partie en ".$row['max_point']." manches</span>";
+	    }
+    ?>
     </fieldset>
 </form>
 
