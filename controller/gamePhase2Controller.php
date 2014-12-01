@@ -1,10 +1,6 @@
 <?php
 include("../view/gamePhase2.php");
-<<<<<<< HEAD
 include("../controller/connexionController.php");
-=======
-$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
 
 ?>
 
@@ -14,7 +10,7 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
     <div style="background-color:<?=$_SESSION['cardRandColor']?>" id="card">
 
         <h1> <?=$_SESSION['cardRandName']?></h1>
-        <p> <?=$_SESSION['cardRandText']?></p>	
+        <p> <?=$_SESSION['cardRandText']?></p>  
     </div>
 
 
@@ -39,11 +35,8 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
         <tr>
             <td colspan="3">
                 <input type="submit" value="WIN!">
-<<<<<<< HEAD
 
                 <?php       print_r($_SESSION['cardRandId']); ?>
-=======
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
             </td>
         </tr>
     </table>
@@ -68,7 +61,7 @@ $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 's
             }
         </script>
         <div class="clock" style="margin:2em;">
-			<INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
+            <INPUT TYPE="button" VALUE="Timer 30 secondes" onClick="timer()">
         </div>
     </form> 
 

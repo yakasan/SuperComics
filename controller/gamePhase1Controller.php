@@ -1,11 +1,6 @@
 <?php
 include("../view/gamePhase1.php");
-<<<<<<< HEAD
 include("../controller/connexionController.php");
-=======
-$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
-
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
 echo "<table>"; 
 echo "<form method='POST' action='../process/getChallenger.php'>";
     echo "<tr>"; 

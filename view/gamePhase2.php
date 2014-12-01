@@ -1,9 +1,5 @@
 <?php 
-<<<<<<< HEAD
 
-=======
-session_start();
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
 include("../inc/header.inc.php");?>
 <body>
 <div id="header">

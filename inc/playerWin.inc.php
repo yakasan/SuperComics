@@ -1,8 +1,8 @@
 <head>
-		<link rel="stylesheet" href="./css/bootstrap.css">
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="../css/bootstrap.css">
-		<link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <table> 
@@ -20,14 +20,10 @@
     * LIMIT du 1er au 10ème résultat de la base
     * Order by date DESC pour les récup du dernier vainceur au plus ancien
     *****/
-<<<<<<< HEAD
    session_start();
 
-        $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'root', 'Guizmo79260');
+        $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'cifop', 'Stagiaire2014');
 
-=======
-    $connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
     $sql = 'SELECT * 
             FROM player_win
             LIMIT 1, 10;

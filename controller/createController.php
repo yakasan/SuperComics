@@ -1,12 +1,7 @@
 <?php
 include("../view/create.php");
-<<<<<<< HEAD
 include("../controller/connexionController.php");
 
-=======
-
-	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
     $sql = 'UPDATE player SET compteur=0';
     $req = $connexion->query($sql);
     $sql = 'SELECT * 
@@ -20,7 +15,7 @@ include("../controller/connexionController.php");
     <fieldset>
         <legend class="text">Sélection des joueurs</legend>
     <?php      
-	    $i=0;
+        $i=0;
         while($row = $req->fetch()){
             echo "<input type='checkbox' name='checked[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."</span>";
         }
@@ -34,13 +29,13 @@ include("../controller/connexionController.php");
     <fieldset>
         <legend class="text">Supression de joueurs</legend>
     <?php      
-		$sql = "SELECT * 
+        $sql = "SELECT * 
                 FROM player";
                 $req = $connexion->query($sql);
                 
-	    while($row = $req->fetch()){
-	        echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."<span>";
-	    }
+        while($row = $req->fetch()){
+            echo "<input type='checkbox' name='delete[".$row['pseudo']."]' value='".$row['pseudo']."'><span>".$row['pseudo']."<span>";
+        }
     ?>
     <input type='submit' value='Suppression'>
     </fieldset>
@@ -53,14 +48,14 @@ include("../controller/connexionController.php");
         <input type="text" id="max_point" name="max_point">
         <input type="submit" value="Modifier">
         <?php      
-		$sql = "SELECT * 
+        $sql = "SELECT * 
                 FROM game
                 WHERE max_point";
                 $req = $connexion->query($sql);
                 
-	    while($row = $req->fetch()){
-	        echo "<span class='text_center'> Vous avez choisi de faire une partie en ".$row['max_point']." manches</span>";
-	    }
+        while($row = $req->fetch()){
+            echo "<span class='text_center'> Vous avez choisi de faire une partie en ".$row['max_point']." manches</span>";
+        }
     ?>
     </fieldset>
 </form>

@@ -1,10 +1,6 @@
 <body>
 <?php 
-<<<<<<< HEAD
 
-=======
-session_start();
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
 
 //var_dump($_SESSION['playerWinner']); 
 include("../inc/header.inc.php");
