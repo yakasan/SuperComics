@@ -1,0 +1,29 @@
+<body>
+<?php include("inc/header.inc.php");?>
+
+<div id="header">
+    <header> 
+        <h1 class="typo">SuperComics L'application </h1>
+        </br>
+    </header>
+</div>
+
+<?php include("inc/nav.inc.php");?>
+
+<table > 
+
+    <tr>
+        <td> Pseudo joueurs gagnant</td>
+        <td> Date de la partie gagnée</td>
+    </tr>
+    
+    <?php foreach ($playerWinTable as $playerWin):?>
+    <tr>
+        <td> <?=$playerWin["pseudo"]?> </td>
+        <td> <?=$playerWin["date_win"]?> </td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+<?php include("inc/footer.inc.php");?>
+</div>
+</body>

@@ -1,0 +1,126 @@
+/* Balises générales de la page */
+
+body {
+
+	background-color: #323274;
+	background-image:url(/SuperComics/img/supcom.png);
+	background-repeat:no-repeat;
+	margin:auto;
+	width: 75%;
+}
+
+input{
+	display: block;
+	margin: auto;
+	font-size: 220%;
+}
+section.tabCenter table{
+	margin: 0 auto;
+}
+
+/* Balises spé textes */
+
+.text, table{
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+}
+
+.typo, h1{
+
+	text-align: center;
+	font-family: bangers;
+	color: #F27321;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+/* Balises spé table */
+
+section.tabCenter table{
+	margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, tr, td{
+    border: 1px solid white;
+    color: white;
+}
+
+th{
+    border: 3px solid white;
+    font-weight: bold;
+    color: white;
+    text-align:center;
+
+}
+
+input[type="checkbox"] {
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    text-align:center;
+}
+.player{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+ 	border: solid 2px;
+ 	border-radius: 10px;
+
+}
+.vs{
+	display: inline-block;
+  	border: solid 2px;
+  	border-radius: 10px;
+	font-size: 220%;
+
+
+}
+.challenger{
+	display: inline-block;
+	color:white;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 2px;
+  	border-radius: 10px;
+
+}
+
+
+section.playerMeter{
+	display: inline-block;
+ 	font-family: arial;
+ 	text-align: center;
+  	border: solid 2px;
+  	border-radius: 10px;
+
+}
+
+table.playerList{
+}
+
+/* Balises spé images */
+
+img.supcom{
+	float: left;
+	max-width: 50%;
+	height: auto;
+}
+
+/* Balises spé formulaires */
+
+input.launchGameButton{
+	display: block;
+	font-size: 220%;
+}
+
+
+input.defyButton{
+	display: block;
+	font-size: 220%;
+}
+

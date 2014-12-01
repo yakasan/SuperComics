@@ -1,12 +1,7 @@
 <?php
 include("../view/create.php");
-<<<<<<< HEAD
-include("../controller/connexionController.php");
-
-=======
 
 	$connexion = new PDO('mysql:host=localhost; dbname=SuperComics', 'stagiaire', 'stagiaire');
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
     $sql = 'UPDATE player SET compteur=0';
     $req = $connexion->query($sql);
     $sql = 'SELECT * 
@@ -59,7 +54,7 @@ include("../controller/connexionController.php");
                 $req = $connexion->query($sql);
                 
 	    while($row = $req->fetch()){
-	        echo "<span class='text_center'> Vous avez choisi de faire une partie en ".$row['max_point']." manches</span>";
+	        echo "<span class="text_center"> Vous avez choisi de faire une partie en ".$row['max_point']." manches</span>";
 	    }
     ?>
     </fieldset>

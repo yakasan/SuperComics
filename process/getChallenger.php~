@@ -1,9 +1,4 @@
 <?php
-<<<<<<< HEAD
-include("../controller/connexionController.php");
-
-
-=======
 
 //J'ouvre ma base de donnée
 		$dbname= 'SuperComics';
@@ -12,7 +7,6 @@ include("../controller/connexionController.php");
 		$host = 'localhost';
 
 	    $connexion = new PDO('mysql:host='.$host .';dbname='.$dbname, $user, $password );
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
 	    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //print_r($_POST['challenger']);
@@ -20,7 +14,7 @@ include("../controller/connexionController.php");
 if (empty($_POST['challenger']) || empty($_POST['challenged'])) {
 	?>
 	    <script type="text/javascript"> 
-	        alert('Veuillez selectionner deux joueurs! ');
+	        alert('Probleme de selection des joueurs! \n Veuillez selectionner deux joueurs differents');
 	         window.history.back(-1)
          </script>";
 	<?php
@@ -53,22 +47,14 @@ else{
     $req = $connexion->query("SELECT * FROM card WHERE used='0' AND id= ROUND(RAND() * ".$_SESSION['idMax'].")+1 ");
     //$cardRand=$req->fetchAll(PDO::FETCH_ASSOC);
     $row = $req->fetch();
-<<<<<<< HEAD
-    print_r($row['id']);
-=======
     //print_r($row);
->>>>>>> 2ac8d82dd1249e45faa0201a8ad795a3251fa014
     if (empty($row)){
         header('location:../process/getChallenger.php');
     }else{
         $_SESSION['cardRandId']=$row['id'];
-        $_SESSION['cardRandName']=utf8_encode($row['name']);
-        $_SESSION['cardRandText']=utf8_encode($row['text']);
+        $_SESSION['cardRandName']=$row['name'];
+        $_SESSION['cardRandText']=$row['text'];
         $_SESSION['cardRandColor']=$row['color'];
-		
-		$cardName=$_SESSION['cardRandName'] ; 
-		$sql ="UPDATE card SET used=1 WHERE name='$cardName'";
-		$req = $connexion->query($sql);
      
     }
 
